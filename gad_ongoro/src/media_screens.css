@@ -1,0 +1,10 @@
+/* HEADER */
+
+/* MAIN */
+@media screen and (max-width: 800px) {
+    iframe.my-projects{
+        width: 90%;
+    }
+}
+
+/* FOOTER */
