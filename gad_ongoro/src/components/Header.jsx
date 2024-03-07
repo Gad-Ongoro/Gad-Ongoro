@@ -8,7 +8,7 @@ function Header() {
 				<div className="dp-name-div">
 					<div className="dp-div">
 						<a href="/">
-							<img src="https://gad-ongoro.github.io/personal-portfolio/DP3.jpg" style={{'width': '110px', 'border-radius': '50%'}} alt='NA'></img>
+							<img className='dp_img' src="https://gad-ongoro.github.io/personal-portfolio/DP3.jpg" alt='NA'></img>
 						</a>
 					</div>
 				
@@ -17,16 +17,16 @@ function Header() {
 					</div>
 				</div>
 
-				{/* <div className="nav-div">
+				<div className="nav-div">
 					<ul>
-						<li> <a href="#"> Home </a> </li>
+						<li> <a href="/"> Home </a> </li>
 						<li> <a href="#about"> About </a> </li>
 						<li> <a href="#expertise"> Expertise </a> </li>
 						<li> <a href="#projects"> Projects </a> </li>
 						<li> <a href="#work"> Work </a> </li>
 						<li> <a href="#contact"> Contact </a> </li>
 					</ul>
-				</div> */}
+				</div>
 
 			</div>
 		</header>
