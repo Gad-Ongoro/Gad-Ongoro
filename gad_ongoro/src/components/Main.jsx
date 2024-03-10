@@ -1,6 +1,8 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Projects from './Projects';
 
 function Main() {
 	const responsive = {
@@ -24,6 +26,10 @@ function Main() {
 	return (
 		<div className=''>
 			<div className="main">
+
+				<Routes>
+					<Route path='/projects/*' element={<Projects></Projects>}></Route>
+				</Routes>
 
 				<div className="about-container">
 					<div className="about" id="about">
@@ -68,16 +74,6 @@ function Main() {
 						
 					</div>
 
-				</div>
-
-				<div className="projects" id="projects">
-					<h2> <code>My Projects</code> </h2>
-					<div className='m-1 w-100 text-center'>
-						<iframe src="https://gad-ongoro.github.io/Phase-1-Week-4-Independent-Project" className="my-projects" title='carshop254' frameborder="0"> CarShop </iframe>
-					</div>
-					<div className='m-1 w-100 text-center'>
-						<iframe src="https://254events.vercel.app/home" className='my-projects' title='events' frameborder="0"> Events </iframe>
-					</div>
 				</div>
 
 				<div className="cert container-fluid m-2">

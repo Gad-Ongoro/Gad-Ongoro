@@ -134,6 +134,7 @@ div.cursor2{
   align-items: center;
   width: 70px;
   height: 25px;
+  color: white;
 }
 
 /*main*/
@@ -192,7 +193,7 @@ div.cursor2{
 iframe.my-projects{
 	border-radius: 10px;
 	width: 90%;
-	height: 450px;
+	height: 600px;
   	background-color: white;
 }
 
