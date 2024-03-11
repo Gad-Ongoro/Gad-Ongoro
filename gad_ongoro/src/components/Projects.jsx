@@ -15,7 +15,7 @@ function Projects() {
 			<NavLink
 			to={'/projects/gamestoreke'} exact 
 			className={'d-block text-white text-decoration-none'}
-			onClick={() => {setIframeSrc('')}}
+			onClick={() => {setIframeSrc('https://game-store-seven-xi.vercel.app/')}}
 			>Game Store 254</NavLink>
 
 			<NavLink
