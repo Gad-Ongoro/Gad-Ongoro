@@ -14,7 +14,7 @@ function Header() {
 					</div>
 				
 					<div className="name-div">
-						<h2> <a href="/">Gad Ongoro </a> </h2>
+						<h4> <a href="/">Gad Ongoro </a> </h4>
 					</div>
 				</div>
 

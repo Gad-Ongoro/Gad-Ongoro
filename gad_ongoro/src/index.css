@@ -78,107 +78,121 @@ div.cursor2{
 
 /* header */
 .header{
-  font-family: Arial, Helvetica, sans-serif;
-  border-bottom: 4px solid orange;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .header a{
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  display: block;
-  text-align: center;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	display: block;
+	text-align: center;
 }
 .header .dp-name-div{
-  padding: 5px;
-  margin-left:25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	padding: 5px;
+	margin-left:25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .header .dp-div{
-  margin-right: 15px;
+  	margin-right: 15px;
 }
 .dp_img{
 	width: 110px;
 	border-radius: 50%;
 }
-.header .name-div{
-  font-size: 15px;
-}
 
 /* header navigation list*/
 .nav-div{
-  margin-right: 5px;
+  	margin-right: 5px;
 }
 .nav-div ul{
-  list-style-type: none;
+  	list-style-type: none;
 }
 .nav-div li{
-  float: left;
-  display: flex;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-right: 50px;
-  transition: all 0.7s;
+	float: left;
+	display: flex;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-right: 50px;
+	transition: all 0.7s;
 }
-.nav-div li:hover{
-  box-shadow: 100px 0 0 0 orange inset;
-  border-radius: 4px;
+.nav-div li a{
+	position: relative;
+	transition: all 0.7s;
+}
+.nav-div ul li a::after{
+	content: '';
+	width: 0;
+	height: 3px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgb(100, 60, 220);
+	transition: all 0.5s;
+}
+.nav-div li:hover a::after{
+	width: 90%;
 }
 .nav-div a{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  height: 25px;
-  color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+	height: 25px;
+	color: white;
+}
+.nav-div a.active{
+	color: rgb(100, 60, 220);
+	font-weight: 600;
 }
 
 /*main*/
 .main{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
 }
 .about-container{
-  background-color: white;
+  	background-color: white;
 }
 .about{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  margin: auto;
-  border: 1px solid white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	margin: auto;
+	border: 1px solid white;
 }
 .about code{
-  display: block;
-  color: black;
-  padding: 10px;
+	display: block;
+	color: black;
+	padding: 10px;
 }
 .div-gif img{
-  width: 250px;
+  	width: 250px;
 }
 
 /* skills */
 .expertise{
-  width: 95%;
-  color:white;
-  display: grid;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
+	width: 95%;
+	color:white;
+	display: grid;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
 }
 .expertise div{
-  margin: 0 5px 0 5px;
+  	margin: 0 5px 0 5px;
 }
 .expertise h3 code{
-  color: aqua;
+  	color: aqua;
 }
 .expertise p{
-  line-height: 1.5rem;
+  	line-height: 1.5rem;
 }
 
 /* projects */
@@ -200,33 +214,33 @@ iframe.my-projects{
 
 /* certs */
 .cert img{
-  width: 250px;
-  border-radius: 5px;
-  transition: all 0.6s;
+	width: 250px;
+	border-radius: 5px;
+	transition: all 0.6s;
 }
 .cert img:hover{
-  transform: scale(1.06);
-  border: 1px solid orange;
+	transform: scale(1.06);
+	border: 1px solid orange;
 }
 
 /* contact */
 .contact{
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  width: 70%;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	width: 70%;
 }
 .socials{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
 }
 .socials img{
-  width: 40px;
+  	width: 40px;
 }
 .Gmail, .WhatsApp, .LinkedIn, .Twitter, .GitHub{
-  border-radius: 30px;
-  transition: all 0.5s;
+	border-radius: 30px;
+	transition: all 0.5s;
 }
 .Gmail:hover, .WhatsApp:hover, .LinkedIn:hover, .Twitter:hover, .GitHub:hover{
 	transform: scale(1.2);
@@ -295,7 +309,3 @@ iframe.my-projects{
 		width: 85%;
 	}
 }
-
-/* selector finder */
-/* cert-btns-container socials */
-/* expertise */
