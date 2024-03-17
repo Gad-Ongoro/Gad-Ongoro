@@ -6,13 +6,7 @@ function Header() {
 		<header>
 			<div className="header">
 
-				<div className="dp-name-div">
-					<div className="dp-div">
-						<a href="/">
-							<img className='dp_img' src="https://gad-ongoro.github.io/personal-portfolio/DP3.jpg" alt='NA'></img>
-						</a>
-					</div>
-				
+				<div className="dp-name-div">				
 					<div className="name-div">
 						<h4> <a href="/">Gad Ongoro </a> </h4>
 					</div>

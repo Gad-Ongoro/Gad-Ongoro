@@ -35,7 +35,8 @@ function Main() {
 					<div className="about" id="about">
 
 						<div className="div-gif">
-							<img src="https://gad-ongoro.github.io/personal-portfolio/JavaScript%20frameworks.gif" alt="Hello World!"></img>
+							{/* <img src="https://gad-ongoro.github.io/personal-portfolio/JavaScript%20frameworks.gif" alt="Hello World!"></img> */}
+							<img src="DP-removebg-preview.png" alt="NA" />
 						</div>
 
 						<div className="overview">

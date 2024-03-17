@@ -9,7 +9,7 @@ function Projects() {
 			<NavLink
 			to={'/projects/safaris'} exact 
 			className={'d-block text-white text-decoration-none'}
-			onClick={() => {setIframeSrc('')}}
+			onClick={() => {setIframeSrc('https://spartans-safaris.vercel.app/accommodations')}}
 			>Spartans Safaris</NavLink>
 
 			<NavLink
