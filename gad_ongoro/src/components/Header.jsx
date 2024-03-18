@@ -8,14 +8,13 @@ function Header() {
 
 				<div className="dp-name-div">				
 					<div className="name-div">
-						<h4> <a href="/">Gad Ongoro </a> </h4>
+						<h4> <NavLink to={"/"}>Gad Ongoro </NavLink> </h4>
 					</div>
 				</div>
 
 				<div className="nav-div">
 					<ul>
-						<li> <a href="/"> Home </a> </li>
-						<li> <a href="/#about"> About </a> </li>
+						<li> <NavLink to={"/"}> Home </NavLink> </li>
 						<li> <a href="/#expertise"> Expertise </a> </li>
 						<li> <NavLink to={'/projects'}>Projects</NavLink></li>
 						<li> <a href="/#work"> Work </a> </li>

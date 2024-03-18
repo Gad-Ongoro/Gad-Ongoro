@@ -12,7 +12,7 @@ function Footer() {
                         <img src="https://cdn-icons-png.flaticon.com/128/10829/10829119.png" alt="gadongoro1@gmail.com" class="Gmail"></img>
                     </a>
 
-                    <a href="https://api.whatsapp.com/send?phone=+254798436255" target="_blank" rel="noreferrer">
+                    <a href="https://wa.me/254798436255" target="_blank" rel="noreferrer">
                         <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" alt="WhatsApp"  class="WhatsApp"></img>
                     </a>
 
