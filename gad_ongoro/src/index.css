@@ -184,13 +184,13 @@ header{
 
 
 .div-gif{
-	width: 900px;
+	width: 800px;
 	background-color: rgb(100, 60, 220);
 	border-radius: 40% 60% 54% 46% / 35% 32% 68% 65%;
 	overflow: hidden;
 }
 .div-gif img{
-  	width: 250px;
+  	width: 200px;
 }
 
 /* skills */
