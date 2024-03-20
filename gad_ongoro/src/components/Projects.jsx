@@ -9,25 +9,25 @@ function Projects() {
 				<h2> <code>My Projects</code> </h2>
 				<NavLink
 				to={'/projects/safaris'} exact 
-				className={'d-block text-white text-decoration-none'}
+				className={'m-2 p-1 text-white text-decoration-none border rounded-pill'}
 				onClick={() => {setIframeSrc('https://spartans-safaris.vercel.app/accommodations')}}
 				>Spartans Safaris</NavLink>
 
 				<NavLink
 				to={'/projects/gamestoreke'} exact 
-				className={'d-block text-white text-decoration-none'}
+				className={'m-2 p-1 text-white text-decoration-none border rounded-pill'}
 				onClick={() => {setIframeSrc('https://game-store-seven-xi.vercel.app/')}}
 				>Game Store 254</NavLink>
 
 				<NavLink
 				to={'/projects/car_shop_254'} exact 
-				className={'d-block text-white text-decoration-none'}
+				className={'m-2 p-1 text-white text-decoration-none border rounded-pill'}
 				onClick={() => {setIframeSrc('https://gad-ongoro.github.io/Phase-1-Week-4-Independent-Project')}}
 				>Car Shop 254</NavLink>
 
 				<NavLink
 				to={'/projects/events'} exact 
-				className={'d-block text-white text-decoration-none'}
+				className={'m-2 p-1 text-white text-decoration-none border rounded-pill'}
 				onClick={() => {setIframeSrc('https://254events.vercel.app/home')}}
 				>Events</NavLink>
 
