@@ -21,7 +21,7 @@ function Header() {
 						<li> <a href="/#contact"> Contact </a> </li>
 						<li> 
 							{/* <a href="Gad_Ongoro_Resume.pdf" download={'Gad_Ongoro_Resume.pdf'}>Resume</a> */}
-							<a href="Gad_Ongoro_Resume.pdf" target='_blank'>Resume</a>
+							<a href="/Gad_Ongoro_Resume.pdf" target='_blank'>Resume</a>
 							{/* <NavLink 
 								to={'/resume'}
 								onClick={() => {downloadFileAtUrl('http://localhost:3000/Gad_Ongoro_Resume.pdf')}}
