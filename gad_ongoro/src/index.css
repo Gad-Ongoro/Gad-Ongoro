@@ -79,7 +79,8 @@ div.cursor2{
 /* header */
 header{
 	width: 100%;
-	background-color: rgb(10, 20, 70);
+	background-color: rgba(10, 20, 70, 0.8);
+	backdrop-filter: blur(5px);
 	position: sticky;
 	top: 0;
 	z-index: 999;
@@ -221,11 +222,25 @@ header{
 	justify-content: center;
 	align-items: center;
 }
+.projects-info_container{
+	position: relative;
+}
 iframe.my-projects{
 	border-radius: 10px;
-	width: 90%;
-	height: 600px;
+	width: 80%;
+	height: 450px;
   	background-color: white;
+	border: 5px double rgb(100, 60, 220);
+}
+.external_link{
+	width: 30%;
+	margin: auto;
+	background-color: white;
+	border: 1px solid rgb(100, 60, 220);
+	position: absolute;
+	top: -3%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 
