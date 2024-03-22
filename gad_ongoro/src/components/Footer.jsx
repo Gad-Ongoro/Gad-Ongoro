@@ -4,7 +4,7 @@ function Footer() {
 	return (
 		<div>
 			<div class="footer">
-            <img src="https://i.pinimg.com/474x/51/f0/7a/51f07a9274c577f6df844fe1f579fe0c.jpg" alt="NA" id="back-img"></img>
+            {/* <img src="https://i.pinimg.com/474x/51/f0/7a/51f07a9274c577f6df844fe1f579fe0c.jpg" alt="NA" id="back-img"></img> */}
 
             <div class="contact" id="contact">
                 <div class="socials">
@@ -29,7 +29,7 @@ function Footer() {
                     </a>
                 </div>
             </div>
-            <p> &copy; Gad Ongoro </p>
+            <p className='text-dark'> &copy; Gad Ongoro </p>
         </div>
 		</div>
 	)

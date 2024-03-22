@@ -51,14 +51,14 @@ function Home() {
 				</div>
 			</div>
 
-			<div className="expertise" id="expertise">
-
+			<div className='skills_container'>
+			<div className="expertise container" id="expertise">
 				<div className="front-end">
 					<h3>
 						<code>Front-End Web Development</code>
 					</h3>
-					<p> 
-						I wield expertise in crafting immersive user experiences. Proficient in HTML, CSS, and JavaScript, I design visually appealing and responsive interfaces. My skill set extends to popular frameworks like React, enabling dynamic and interactive web applications. I focus on optimizing user interface performance and ensuring cross-browser compatibility. Through a user-centered approach, I create intuitive and accessible designs, incorporating best practices in UX/UI. From responsive layouts to seamless integration with back-end systems, my front-end proficiency encompasses the entire spectrum of web development, delivering engaging and user-friendly digital experiences. 
+					<p>
+						<code>I wield expertise in crafting immersive user experiences. Proficient in HTML, CSS, and JavaScript, I design visually appealing and responsive interfaces. My skill set extends to popular frameworks like React, enabling dynamic and interactive web applications. I focus on optimizing user interface performance and ensuring cross-browser compatibility. Through a user-centered approach, I create intuitive and accessible designs, incorporating best practices in UX/UI. From responsive layouts to seamless integration with back-end systems, my front-end proficiency encompasses the entire spectrum of web development, delivering engaging and user-friendly digital experiences. </code>
 					</p>
 				</div>
 
@@ -67,11 +67,10 @@ function Home() {
 						<code>Back-End Web Development</code>
 					</h3>
 					<p>
-						As a software engineer, my expertise lies in MySQL-centric backend development. Proficient in Python, Java, and Node.js, I specialize in crafting scalable solutions using frameworks like Django and Express, with MySQL as the focal point. I excel in designing and optimizing MySQL databases, ensuring performance and efficiency. From developing RESTful and GraphQL APIs to implementing microservices architectures, security measures, and DevOps integration, my skill set is finely tuned for MySQL-backed applications. My commitment to problem-solving and scalability is evident in streamlined MySQL queries, code optimization, and strategic system design, reflecting a focused and comprehensive approach to backend development.
+						<code>As a software engineer, my expertise lies in MySQL-centric backend development. Proficient in Python, Java, and Node.js, I specialize in crafting scalable solutions using frameworks like Django and Express, with MySQL as the focal point. I excel in designing and optimizing MySQL databases, ensuring performance and efficiency. From developing RESTful and GraphQL APIs to implementing microservices architectures, security measures, and DevOps integration, my skill set is finely tuned for MySQL-backed applications. My commitment to problem-solving and scalability is evident in streamlined MySQL queries, code optimization, and strategic system design, reflecting a focused and comprehensive approach to backend development. </code>
 					</p>
-
 				</div>
-
+			</div>
 			</div>
 
 			{/* <div className="cert container-fluid m-2">

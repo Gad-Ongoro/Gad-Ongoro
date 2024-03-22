@@ -8,7 +8,7 @@ function Header() {
 
 				<div className="dp-name-div">				
 					<div className="name-div">
-						<h4> <NavLink to={"/"}>Gad Ongoro </NavLink> </h4>
+						<h4> <NavLink to={"/"}> Gad Ongoro </NavLink> </h4>
 					</div>
 				</div>
 
@@ -22,10 +22,6 @@ function Header() {
 						<li> 
 							{/* <a href="Gad_Ongoro_Resume.pdf" download={'Gad_Ongoro_Resume.pdf'}>Resume</a> */}
 							<a href="/Gad_Ongoro_Resume.pdf" target='_blank'>Resume</a>
-							{/* <NavLink 
-								to={'/resume'}
-								onClick={() => {downloadFileAtUrl('http://localhost:3000/Gad_Ongoro_Resume.pdf')}}
-							>Resume</NavLink> */}
 						</li>
 					</ul>
 				</div>
