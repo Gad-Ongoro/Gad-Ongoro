@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 function Header() {
 	return (
-		<header>
+		<header className='mb-3'>
 			<div className="header">
 
 				<div className="dp-name-div">				

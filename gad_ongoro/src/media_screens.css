@@ -7,11 +7,14 @@
     }
 
     .div-gif{
-        width: 210px;
+        width: 110px;
         background-color: rgb(100, 60, 220);
         border-radius: 40% 60% 54% 46% / 35% 32% 68% 65%;
         overflow: hidden;
     }
+    .div-gif img{
+        width: 100px;
+  }
 }
 
 /* FOOTER */
