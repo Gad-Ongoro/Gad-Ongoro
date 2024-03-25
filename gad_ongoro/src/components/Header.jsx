@@ -2,6 +2,10 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 function Header() {
+	function scrollUp(){
+		window.scrollTo(0, 0);
+	}
+
 	return (
 		<header className='mb-3'>
 			<div className="header">
@@ -14,9 +18,9 @@ function Header() {
 
 				<div className="nav-div">
 					<ul>
-						<li> <NavLink to={"/"}> Home </NavLink> </li>
+						<li> <NavLink to={"/"} onClick={scrollUp}> Home </NavLink> </li>
 						<li> <a href="/#expertise"> Expertise </a> </li>
-						<li> <NavLink to={'/projects'}>Projects</NavLink></li>
+						<li> <NavLink to={'/projects'} onClick={scrollUp}>Projects</NavLink></li>
 						<li> <a href="/#work"> Work </a> </li>
 						<li> <a href="/#contact"> Contact </a> </li>
 						<li> 
