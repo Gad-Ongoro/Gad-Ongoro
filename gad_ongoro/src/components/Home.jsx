@@ -86,7 +86,10 @@ function Home() {
 								<code className='back-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>PostgreSQL</code>
 								<code className='back-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>API Development</code>
 							</div>
-							<code>As a software engineer, my expertise lies in MySQL-centric backend development. Proficient in Python, Java, and Node.js, I specialize in crafting scalable solutions using frameworks like Django and Express, with MySQL as the focal point. I excel in designing and optimizing MySQL databases, ensuring performance and efficiency. From developing RESTful and GraphQL APIs to implementing microservices architectures, security measures, and DevOps integration, my skill set is finely tuned for MySQL-backed applications. My commitment to problem-solving and scalability is evident in streamlined MySQL queries, code optimization, and strategic system design, reflecting a focused and comprehensive approach to backend development. </code>
+							<code>I possess a strong skill set in backend web development,
+								with proficiency in Python frameworks such as Django and Flask,
+								as well as JavaScript technologies like Node.js and Express.js.
+								Within Python, I effectively manage projects utilizing Django's built-in features, including its powerful Object-Relational Mapping (ORM) system, and optimize database interactions using SQLAlchemy. In JavaScript, I excel at building high-performance backend services, ensuring seamless communication between frontend and backend components. Additionally, I have expertise in SQL databases like PostgreSQL and MySQL, where I design and optimize relational databases to maintain data integrity and enhance performance. Leveraging ORM systems like Django's ORM and Sequelize in Node.js, I streamline database operations, enhancing code readability and maintainability. </code>
 						</div>
 					</div>
 
