@@ -67,7 +67,9 @@ function Home() {
 								<code className='front-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>SASS</code>
 								<code className='front-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>Figma</code>
 							</div>
-							<code>I wield expertise in crafting immersive user experiences. Proficient in HTML, CSS, and JavaScript, I design visually appealing and responsive interfaces. My skill set extends to popular frameworks like React, enabling dynamic and interactive web applications. I focus on optimizing user interface performance and ensuring cross-browser compatibility. Through a user-centered approach, I create intuitive and accessible designs, incorporating best practices in UX/UI. From responsive layouts to seamless integration with back-end systems, my front-end proficiency encompasses the entire spectrum of web development, delivering engaging and user-friendly digital experiences. </code>
+							<code>I wield expertise in crafting immersive user experiences using HTML, CSS, and JavaScript, designing visually appealing and responsive interfaces incorporated with popular frameworks like React to enable dynamic and interactive web applications.
+								I focus on optimizing user interface performance, ensuring cross-browser compatibility, and integration with back-end systems.
+								Through a user-centered approach, my front-end proficiency encompasses the entire spectrum of web development, delivering engaging and user-friendly digital experiences. </code>
 						</div>
 					</div>
 
