@@ -34,17 +34,17 @@ body{
 }
 
 ::-webkit-scrollbar{
-  width: 10px;
-}
+	width: 10px;
+  }
 ::-webkit-scrollbar-thumb{
-  background-color: rgb(200, 200, 200);
-  border-radius: 10px;
+background-color: rgb(200, 200, 200);
+border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover{
-  background-color: rgba(15, 114, 150, 0.8);
+background-color: rgba(142, 142, 142, 0.8);
 }
 ::-webkit-scrollbar-thumb:active{
-  background-color: rgb(0, 228, 216);
+background-color: rgb(100, 103, 102);
 }
 
 /* cursor */
