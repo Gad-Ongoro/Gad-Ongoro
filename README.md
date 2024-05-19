@@ -6,10 +6,10 @@
 
 ###
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1000&color=0CF709&vCenter=true&width=1000&height=60&lines=+%F0%9F%91%8B+I+am+Gad+Ongoro)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1000&color=0CF709&vCenter=true&width=1000&height=60&lines=Hello+World+%F0%9F%91%8B+I+am+Gad+Ongoro)](https://git.io/typing-svg)
 
 
-<h1 align="center">Hello World 👋</h1>
+<!-- <h1 align="center">Hello World 👋</h1> -->
 
 <a href="https://www.linkedin.com/in/gad-ongoro-4a31b4215/" target="_blank">
 <img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
