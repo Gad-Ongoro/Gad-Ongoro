@@ -38,13 +38,10 @@ function Home() {
 
 					<div className="overview">
 						<div>
-							<code className='m-2'>👋 I'm Gad, your friendly neighbourhood full-stack software engineer, just an <span className='text-primary'><a href='mailto:gadongoro1@gmail.com'>email</a></span> away to save the day,
-							I design, develop, and deploy robust web applications.</code>
-							
-							{/* <code className='m-2'>
-								I'm proficient in front-end technologies such as HTML, CSS, and JavaScript, with a keen eye for creating intuitive and responsive user interfaces.
-								My back-end proficiency includes Python, PHP, and Node.js, utilizing frameworks like Flask, Express, and Django. I'm also experienced in database management using SQL and NoSQL databases.
-							</code> */}
+							<code className='m-2'>👋 I'm Gad, a dedicated full-stack software engineer.
+								Just an <span className='text-primary'><a href='mailto:gadongoro1@gmail.com'>email</a></span> away to save the day,
+								I design, develop, and deploy robust web applications.
+							</code>
 						</div>
 					</div>
 
@@ -61,6 +58,7 @@ function Home() {
 							<div className='container d-flex flex-wrap'>
 								<code className='front-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>JavaScript</code>
 								<code className='front-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>React JS</code>
+								<code className='front-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>Material UI</code>
 								<code className='front-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>Tailwind CSS</code>
 								<code className='front-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>Bootstrap V</code>
 								<code className='front-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>CSS</code>
@@ -83,7 +81,7 @@ function Home() {
 								<code className='back-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>Django</code>
 								<code className='back-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>FLask</code>
 								<code className='back-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>Node JS</code>
-								<code className='back-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>PHP</code>
+								<code className='back-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>Express JS</code>
 								<code className='back-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>MySQL</code>
 								<code className='back-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>PostgreSQL</code>
 								<code className='back-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>API Development</code>
@@ -101,6 +99,7 @@ function Home() {
 						</h3>
 						<div>
 							<div className='container d-flex flex-wrap'>
+								<code className='dev-ops-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>CI/CD</code>
 								<code className='dev-ops-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>Docker</code>
 								<code className='dev-ops-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>AWS</code>
 								<code className='dev-ops-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>Git</code>
@@ -108,8 +107,9 @@ function Home() {
 							</div>
 							<code className='m-2'> 
 								I'm adept at version control systems like Git and deployment on cloud platforms such as AWS,
-								using Docker to enable seamless containerization and deployment of applications, 
-								strong problem-solving skills, and a commitment to writing clean, efficient, and scalable code.
+								using Docker to enable seamless containerization and deployment of applications. 
+								I have strong problem-solving skills, a commitment to writing clean, efficient, and scalable code, 
+								and experience with Continuous Integration/Continuous Deployment (CI/CD) pipelines to automate the software delivery process.
 								I've proven my ability to collaborate in cross-functional teams, delivering high-quality software solutions.
 							</code>
 						</div>
