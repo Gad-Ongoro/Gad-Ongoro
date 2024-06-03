@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Message from {{ name }}</title>
+</head>
+<body class="p-10 bg-gray-900 text-white">
+    <div class="grid gap-10 justify-center items-center">
+        <h1 class="text-3xl font-bold">Message from {{ name }}</h1>
+        <p><strong>Email:</strong> {{ email }}</p>
+        <p><strong>Message:</strong></p>
+        <p>{{ message }}</p>
+    </div>
+</body>
+</html>
