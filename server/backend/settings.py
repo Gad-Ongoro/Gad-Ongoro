@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'api',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -49,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'backend.urls'
@@ -118,7 +120,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = '/staticfiles/'
+STATIC_URL = '/static/'
 STATIC_ROOT = (BASE_DIR / 'staticfiles') or os.path.join(BASE_DIR, 'staticfiles')
 
 
@@ -137,3 +139,15 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ]
 }
+
+# Allow all origins (not recommended for production)
+# CORS_ALLOW_ALL_ORIGINS = True
+
+# Allow specific origins
+CORS_ALLOWED_ORIGINS = [
+    # "http://localhost:3000",
+    "https://gad-ongoros-portfolio-website6.vercel.app",
+]
+
+# Allow credentials
+CORS_ALLOW_CREDENTIALS = True
