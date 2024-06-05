@@ -18,6 +18,7 @@ django-cors-headers = "*"
 django-environ = "*"
 python-decouple = "*"
 dj-database-url = "*"
+gunicorn = "*"
 
 [dev-packages]
 
