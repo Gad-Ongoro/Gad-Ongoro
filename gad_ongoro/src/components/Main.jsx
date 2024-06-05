@@ -1,20 +1,30 @@
-import React from 'react';
+import {useState, createContext} from 'react';
 import { Routes, Route } from 'react-router-dom';
+import Header from './Header';
 import Home from './Home';
 import Projects from './Projects';
+import Contact from './Contact';
+import SlideOver from './SlideOver';
+export const ProfileContext = createContext();
 
 function Main() {
-
+	const [open, setOpen] = useState(false);
 	return (
 		<div className=''>
 			<div className="main">
-				<Routes>
-					<Route path='/' element={<Home></Home>}></Route>
-					<Route path='/home' element={<Home></Home>}></Route>
-					<Route path='/projects/*' element={<Projects></Projects>}></Route>
-				</Routes>
+				<ProfileContext.Provider value={{open, setOpen}}>
+					<Header></Header>
+					<Routes>
+						<Route path='/' element={<Home></Home>}></Route>
+						<Route path='/home' element={<Home></Home>}></Route>
+						<Route path='/projects/*' element={<Projects></Projects>}></Route>
+						<Route path='/contact' element={<Contact></Contact>}></Route>
+					</Routes>
 
-				<div className="work" id="work"></div>
+					<SlideOver></SlideOver>
+
+					<div className="work" id="work"></div>
+				</ProfileContext.Provider>
 			</div>
 		</div>
 	)
