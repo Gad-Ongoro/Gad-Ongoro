@@ -1,14 +1,17 @@
 import * as React from 'react';
 import { useState } from 'react';
 import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
+import CircularProgress from '@mui/material/CircularProgress';
 
 export default function Contact() {
 	const [formData, setFormData] = useState({});
 	const [open, setOpen] = React.useState(false);
+	const [loading, setLoading] = React.useState(false);
 	const [errorSnackOpen, setErrorSnackOpen] = React.useState(false);
 
 	function handleChange(e) {
@@ -22,6 +25,7 @@ export default function Contact() {
 	function handleSubmit(e) {
 		e.preventDefault();
 		e.target.reset();
+		setLoading(true);
 		console.log(formData);
 		setFormData({});
 		fetch('http://127.0.0.1:8000/api/post/contacts/', {
@@ -35,9 +39,11 @@ export default function Contact() {
 		.then((res) => {
 			if (res.ok) {
 				setOpen(true);
+				setLoading(false);
 				return res.json();
 			} else {
 				setErrorSnackOpen(true);
+				setLoading(false);
 				return Promise.reject(res);				
 			}
 		})
@@ -51,20 +57,21 @@ export default function Contact() {
 
   const handleClose = (event, reason) => {
     if (reason === 'clickaway') {
-      return;
+      	return;
     }
 
     setOpen(false);
-		setErrorSnackOpen(false);
+	setErrorSnackOpen(false);
   };
 
   return (
 		<div className='h-screen grid items-center'>
 			<div className='grid justify-center items-center'>
+				<h1 className='pacifico-regular text-violet-900 text-3xl md:text-4xl'>Get in Touch</h1>
 				<Box
 					component="form"
 					sx={{
-						'& > :not(style)': { m: 1, width: '50ch' },
+						'& > :not(style)': { m: 1, width: '25ch' },
 					}}
 					noValidate
 					autoComplete="off"
@@ -73,31 +80,34 @@ export default function Contact() {
 				>
 					<TextField 
 						id="outlined-basic"
-						label="Name" 
+						label="Your Name" 
 						variant="outlined" 
 						name="name"
 						onChange={handleChange}
 					/>
 					<TextField 
 						id="outlined-basic" 
-						label="Email" 
+						label="Your Email" 
 						variant="outlined" 
 						name="email"
 						onChange={handleChange}
 					/>
 					<TextField
 						id="outlined-multiline-flexible"
-						label="Message"
+						label="Your Message"
 						multiline
 						maxRows={5}
 						name="message"
 						onChange={handleChange}
 					/>
 
-					<button className='text-white bg-violet-500 hover:bg-violet-700 font-bold py-2 px-4 rounded' type='submit'>Send Message</button>
-					
+					<div className='flex justify-center'>
+						<button className='text-white text-center bg-violet-500 hover:bg-violet-700 font-bold py-2 px-4 rounded' type='submit'>Send Message</button>
+						{loading && <Box sx={{ display: 'flex justify-center items-center' }}><CircularProgress /></Box>}
+					</div>
 				</Box>
 			</div>
+			
 
 			{/* Snackbars */}
 			<div>
@@ -125,7 +135,7 @@ export default function Contact() {
 						Something went wrong! Please try again.
 					</Alert>
 				</Snackbar>
-    	</div>
+    		</div>
 		</div>
   );
 }

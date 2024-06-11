@@ -1,5 +1,6 @@
 import {useState, createContext} from 'react';
 import { Routes, Route } from 'react-router-dom';
+import Admin from './Admin';
 import Header from './Header';
 import Home from './Home';
 import Projects from './Projects';
@@ -19,6 +20,7 @@ function Main() {
 						<Route path='/home' element={<Home></Home>}></Route>
 						<Route path='/projects/*' element={<Projects></Projects>}></Route>
 						<Route path='/contact' element={<Contact></Contact>}></Route>
+						<Route path='/admin' element={<Admin></Admin>}></Route>
 					</Routes>
 
 					<SlideOver></SlideOver>
