@@ -10,21 +10,20 @@ function Header() {
 	}
 
 	return (
-		<header className='p-3 mb-3'>
+		<header className='p-3 mb-3 bg-gray-100 sticky top-0 w-full backdrop-blur'>
 			<div className="header flex justify-between items-center z-10">
 
-				<div className="dp-name-div">				
-					<div className="name-div">
-						<h4> <NavLink to={"/"}> Gad Ongoro </NavLink> </h4>
+				<div>				
+					<div className="">
+						<h2 className='pacifico-regular text-2xl md:text-3xl'> <NavLink to={"/"}> Gad Ongoro </NavLink> </h2>
 					</div>
 				</div>
 
-				<div className="nav-div hidden md:block">
-					<ul>
+				<div className="nav-div hidden md:block mr-10">
+					<ul className='flex justify-between items-center gap-x-8 lg:gap-x-16'>
 						<li> <NavLink className={'text-lg'} to={"/"} onClick={scrollUp}> Home </NavLink> </li>
 						<li> <a className={'text-lg'} href="/#expertise"> Expertise </a> </li>
 						<li> <NavLink className={'text-lg'} to={'/projects'} onClick={scrollUp}>Projects</NavLink></li>
-						<li> <a className={'text-lg'} href="/#work"> Work </a> </li>
 						<li> <NavLink className={'text-lg'} to={'/contact'} onClick={scrollUp}>Contact</NavLink> </li>
 						<li> 
 							{/* <a className={'text-lg'} href="Gad_Ongoro_Resume.pdf" download={'Gad_Ongoro_Resume.pdf'}>Resume</a> */}

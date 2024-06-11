@@ -66,7 +66,6 @@ export default function SlideOver() {
 													<li> <NavLink className={'text-lg'} to={"/"} onClick={scrollUp}> Home </NavLink> </li>
 													<li> <a className={'text-lg'} href="/#expertise"> Expertise </a> </li>
 													<li> <NavLink className={'text-lg'} to={'/projects'} onClick={scrollUp}>Projects</NavLink></li>
-													<li> <a className={'text-lg'} href="/#work"> Work </a> </li>
 													<li> <NavLink className={'text-lg'} to={'/contact'} onClick={scrollUp}>Contact</NavLink> </li>
 													<li> 
 															{/* <a className={'text-lg'} href="Gad_Ongoro_Resume.pdf" download={'Gad_Ongoro_Resume.pdf'}>Resume</a> */}

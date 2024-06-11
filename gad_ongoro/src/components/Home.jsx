@@ -1,33 +1,30 @@
 import React from 'react';
-// import Carousel from 'react-multi-carousel';
-// import 'react-multi-carousel/lib/styles.css';
 
 function Home() {
-	// const responsive = {
-	// 	desktop: {
-	// 	  breakpoint: { max: 3000, min: 1024 },
-	// 	  items: 3,
-	// 	  slidesToSlide: 1
-	// 	},
-	// 	tablet: {
-	// 	  breakpoint: { max: 1024, min: 464 },
-	// 	  items: 2,
-	// 	  slidesToSlide: 1
-	// 	},
-	// 	mobile: {
-	// 	  breakpoint: { max: 464, min: 0 },
-	// 	  items: 1,
-	// 	  slidesToSlide: 1
-	// 	}
-	//   };
+	const frontEndSkillsList = ['JavaScript', 'React JS', 'Material UI', 'Tailwind CSS', 'Bootstrap V', 'CSS', 'SASS', 'Figma'];
+	const backEndSkillsList = ['Python', 'Django', 'Flask', 'Node JS', 'Express JS', 'MySQL', 'PostgreSQL', 'API Development'];
+	const devOpsList = ['CI/CD', 'Docker', 'AWS', 'Git', 'Linux'];
 
+	const frontEndSkills = frontEndSkillsList.map((skill) => {
+		return (
+			<code key={skill} className='bg-violet-500 text-white border rounded m-2 p-2 hover:cursor-pointer'>{skill}</code>
+		)
+	});
+
+	const backEndSkills = backEndSkillsList.map((skill) => {
+		return (
+			<code key={skill} className='bg-violet-500 text-white border rounded m-2 p-2 hover:cursor-pointer'>{skill}</code>
+		)
+	});
+
+	const devOps = devOpsList.map((skill) => {
+		return (
+			<code key={skill} className='bg-violet-500 text-white border rounded m-2 p-2 hover:cursor-pointer'>{skill}</code>
+		)
+	})
 
 	return (
 		<div className=''>
-			{/* <Routes>
-				<Route path='/projects/*' element={<Projects></Projects>}></Route>
-			</Routes> */}
-
 			<div className="about-container">
 				<div className="about" id="about">
 
@@ -56,14 +53,7 @@ function Home() {
 						</h3>
 						<div>
 							<div className='container d-flex flex-wrap'>
-								<code className='front-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>JavaScript</code>
-								<code className='front-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>React JS</code>
-								<code className='front-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>Material UI</code>
-								<code className='front-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>Tailwind CSS</code>
-								<code className='front-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>Bootstrap V</code>
-								<code className='front-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>CSS</code>
-								<code className='front-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>SASS</code>
-								<code className='front-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>Figma</code>
+								{frontEndSkills}
 							</div>
 							<code>I wield expertise in crafting immersive user experiences using HTML, CSS, and JavaScript, designing visually appealing and responsive interfaces incorporated with popular frameworks like React to enable dynamic and interactive web applications.
 								I focus on optimizing user interface performance, ensuring cross-browser compatibility, and integration with back-end systems.
@@ -77,19 +67,18 @@ function Home() {
 						</h3>
 						<div>
 							<div className='container d-flex flex-wrap'>
-								<code className='back-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>Python</code>
-								<code className='back-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>Django</code>
-								<code className='back-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>FLask</code>
-								<code className='back-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>Node JS</code>
-								<code className='back-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>Express JS</code>
-								<code className='back-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>MySQL</code>
-								<code className='back-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>PostgreSQL</code>
-								<code className='back-end-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>API Development</code>
+								{backEndSkills}								
 							</div>
+
 							<code>I possess a strong skill set in backend web development,
 								with proficiency in Python frameworks such as Django and Flask,
 								as well as JavaScript technologies like Node.js and Express.js.
-								Within Python, I effectively manage projects utilizing Django's built-in features, including its powerful Object-Relational Mapping (ORM) system, and optimize database interactions using SQLAlchemy. In JavaScript, I excel at building high-performance backend services, ensuring seamless communication between frontend and backend components. Additionally, I have expertise in SQL databases like PostgreSQL and MySQL, where I design and optimize relational databases to maintain data integrity and enhance performance. Leveraging ORM systems like Django's ORM and Sequelize in Node.js, I streamline database operations, enhancing code readability and maintainability. </code>
+								Within Python, I effectively manage projects utilizing Django's built-in features, including its powerful Object-Relational Mapping (ORM) system, 
+								and optimize database interactions using SQLAlchemy. 
+								In JavaScript, I excel at building high-performance backend services, ensuring seamless communication between frontend and backend components.
+								Additionally, I have expertise in SQL databases like PostgreSQL and MySQL, where I design and optimize relational databases to maintain data integrity and enhance performance. 
+								Leveraging ORM systems like Django's ORM and Sequelize in Node.js, I streamline database operations, enhancing code readability and maintainability.
+							</code>
 						</div>
 					</div>
 
@@ -99,11 +88,7 @@ function Home() {
 						</h3>
 						<div>
 							<div className='container d-flex flex-wrap'>
-								<code className='dev-ops-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>CI/CD</code>
-								<code className='dev-ops-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>Docker</code>
-								<code className='dev-ops-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>AWS</code>
-								<code className='dev-ops-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>Git</code>
-								<code className='dev-ops-skills text-white border rounded m-2 p-2 hover:cursor-pointer'>Linux</code>
+								{devOps}
 							</div>
 							<code className='m-2'> 
 								I'm adept at version control systems like Git and deployment on cloud platforms such as AWS,
@@ -116,43 +101,6 @@ function Home() {
 					</div>
 				</div>
 			</div>
-
-			{/* <div className="cert container-fluid m-2">
-				<Carousel
-					swipeable={true}
-					draggable={false}
-					showDots={true}
-					responsive={responsive}
-					ssr={true}
-					autoPlay={true}
-					infinite={true}
-					keyBoardControl={true}
-					customTransition="all 2s ease-in-out"
-					containerClass="carousel-container"
-					removeArrowOnDeviceType={["tablet", "mobile"]}
-					dotListClass="custom-dot-list-style"
-					itemClass="carousel-item-padding-40-px"
-					>
-						<div className='text-center'>
-							<img src="https://api2.sololearn.com/v2/certificates/CC-EQIRQNWC/image/png" alt="Web Development"></img>
-						</div>
-						<div className='text-center'>
-							<img src="https://api2.sololearn.com/v2/certificates/CC-IKS2UDAX/image/png" alt="HTML"></img>
-						</div>
-						<div className='text-center'>
-							<img src="https://api2.sololearn.com/v2/certificates/CC-IQM3PG3S/image/png" alt="CSS"></img>
-						</div>
-						<div className='text-center'>
-							<img src="https://api2.sololearn.com/v2/certificates/CC-359JCKXK/image/png" alt="JavaScript"></img>
-						</div>
-						<div className='text-center'>
-							<img src="https://api2.sololearn.com/v2/certificates/CC-YVAF8VMU/image/png" alt="Python"></img>
-						</div>
-						<div className='text-center'>
-							<img src="https://api2.sololearn.com/v2/certificates/CC-YNTOYVQ8/image/png" alt="Tech For Everyone"></img>
-						</div>
-				</Carousel>
-			</div> */}
 
 			<div className="work" id="work"></div>
 		</div>

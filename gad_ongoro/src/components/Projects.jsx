@@ -1,14 +1,20 @@
 import { useState } from 'react';
 import { Routes, Route, NavLink } from 'react-router-dom';
-import SpartansSafaris from './Projects/SpartansSafaris';
 
 function Projects() {
-	let [iframeSrc, setIframeSrc] = useState('https://254events.vercel.app/home')
+	let [iframeSrc, setIframeSrc] = useState('https://go-bank-seven.vercel.app/')
 	return (
 		<div className='bg-white'>
 			<div className='container-fluid text-center'>
 				{/* <h2> <code>My Projects</code> </h2> */}
 				<div className='project-navlinks d-flex justify-content-center flex-wrap'>
+
+					<NavLink
+					to={'/projects/go_bank'} exact 
+					className={'m-2 p-1 text-decoration-none border rounded'}
+					onClick={() => {setIframeSrc('https://go-bank-seven.vercel.app/')}}
+					>GO Bank</NavLink>
+
 					<NavLink
 					to={'/projects/safaris'} exact 
 					className={'m-2 p-1 text-decoration-none border rounded'}
@@ -44,10 +50,6 @@ function Projects() {
 							<iframe src={iframeSrc} className="my-projects" title='web-projects' frameborder="0"> CarShop </iframe>
 						</div>
 					</div>
-
-					<Routes>
-						<Route path='/safaris' element={<SpartansSafaris></SpartansSafaris>}></Route>
-					</Routes>
 
 				</div>
 
