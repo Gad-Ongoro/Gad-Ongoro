@@ -1,4 +1,5 @@
 import * as React from 'react';
+import apiUrl from '../api';
 import { useState } from 'react';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
@@ -28,7 +29,7 @@ export default function Contact() {
 		setLoading(true);
 		console.log(formData);
 		setFormData({});
-		fetch('http://127.0.0.1:8000/api/post/contacts/', {
+		fetch(`${apiUrl}/api/post/contacts/`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
