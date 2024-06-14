@@ -116,22 +116,6 @@ div.cursor2{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 20px;
 }
-.about-container{
-  	background-color: white;
-}
-.about{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 90%;
-	margin: auto;
-	border: 1px solid white;
-}
-.about code{
-	display: block;
-	color: black;
-}
-
 
 .div-gif{
 	width: 270px;
@@ -139,28 +123,16 @@ div.cursor2{
 	border-radius: 40% 60% 54% 46% / 35% 32% 68% 65%;
 	overflow: hidden;
 }
-.div-gif img{
-  	width: 150px;
-}
 
 /* skills */
 .skills_container{
 	background-color: rgb(245, 245, 245);
-}
-.expertise{
-	display: grid;
-	justify-content: space-between;
-	align-items: center;
 }
 
 .expertise h3 code{
 	font-weight: 900;
 	font-size: 25px;
   	color: rgb(100, 60, 220);
-}
-.expertise code{
-	color: black;
-  line-height: 1.5rem;
 }
 
 /* projects */
@@ -201,12 +173,5 @@ iframe.my-projects{
 	.expertise{
 		width: 100%;
 		flex-direction: column;
-	}
-	.html, .css, .javascript{
-		width: 80%;
-		margin: auto;
-	}
-	.socials{
-		width: 85%;
 	}
 }

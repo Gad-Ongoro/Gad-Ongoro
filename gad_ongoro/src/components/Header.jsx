@@ -10,7 +10,7 @@ function Header() {
 	}
 
 	return (
-		<header className='p-3 mb-3 bg-gray-100 sticky top-0 w-full backdrop-blur'>
+		<header className='p-3 mb-3 bg-gray-100 sticky top-0 w-full backdrop-blur z-10'>
 			<div className="header flex justify-between items-center z-10">
 
 				<div>				

@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer';
 
 function Home() {
 	const frontEndSkillsList = ['JavaScript', 'React JS', 'Material UI', 'Tailwind CSS', 'Bootstrap V', 'CSS', 'SASS', 'Figma'];
@@ -25,17 +26,17 @@ function Home() {
 
 	return (
 		<div className=''>
-			<div className="about-container">
-				<div className="about" id="about">
+			<div className="">
+				<div className="p-2 grid md:flex justify-between items-center">
 
 					<div className="div-gif">
-						{/* <img src="https://gad-ongoro.github.io/personal-portfolio/JavaScript%20frameworks.gif" alt="Hello World!"></img> */}
-						<img src="DP-removebg-preview.png" alt="NA" />
+						{/* <img src="https://gad-ongoro.github.io/personal-portfolio/JavaScript%20frameworks.gif" alt="Hello World!" className='md:hidden'></img> */}
+						<img src="DP-removebg-preview.png" alt="NA" className='hidden md:block' />
 					</div>
 
 					<div className="overview">
 						<div>
-							<code className='m-2'>👋 I'm Gad, a dedicated full-stack software engineer.
+							<code className='m-2 text-gray-950'>👋 I'm Gad, a dedicated full-stack software engineer.
 								Just an <span className='text-primary'><a href='mailto:gadongoro1@gmail.com'>email</a></span> away to save the day,
 								I design, develop, and deploy robust web applications.
 							</code>
@@ -55,7 +56,7 @@ function Home() {
 							<div className='container d-flex flex-wrap'>
 								{frontEndSkills}
 							</div>
-							<code>I wield expertise in crafting immersive user experiences using HTML, CSS, and JavaScript, designing visually appealing and responsive interfaces incorporated with popular frameworks like React to enable dynamic and interactive web applications.
+							<code className='text-gray-950'>I wield expertise in crafting immersive user experiences using HTML, CSS, and JavaScript, designing visually appealing and responsive interfaces incorporated with popular frameworks like React to enable dynamic and interactive web applications.
 								I focus on optimizing user interface performance, ensuring cross-browser compatibility, and integration with back-end systems.
 								Through a user-centered approach, my front-end proficiency encompasses the entire spectrum of web development, delivering engaging and user-friendly digital experiences. </code>
 						</div>
@@ -70,7 +71,7 @@ function Home() {
 								{backEndSkills}								
 							</div>
 
-							<code>I possess a strong skill set in backend web development,
+							<code className='text-gray-950'>I possess a strong skill set in backend web development,
 								with proficiency in Python frameworks such as Django and Flask,
 								as well as JavaScript technologies like Node.js and Express.js.
 								Within Python, I effectively manage projects utilizing Django's built-in features, including its powerful Object-Relational Mapping (ORM) system, 
@@ -90,7 +91,7 @@ function Home() {
 							<div className='container d-flex flex-wrap'>
 								{devOps}
 							</div>
-							<code className='m-2'> 
+							<code className='text-gray-950 m-2'>
 								I'm adept at version control systems like Git and deployment on cloud platforms such as AWS,
 								using Docker to enable seamless containerization and deployment of applications. 
 								I have strong problem-solving skills, a commitment to writing clean, efficient, and scalable code, 
@@ -103,6 +104,8 @@ function Home() {
 			</div>
 
 			<div className="work" id="work"></div>
+
+			<Footer></Footer>
 		</div>
 	)
 };

@@ -7,6 +7,7 @@ import { ProfileContext } from './Main';
 export default function SlideOver() {
 	function scrollUp(){
 		window.scrollTo(0, 0);
+    setOpen(false);
 	}
 	const {open, setOpen} = useContext(ProfileContext);
 

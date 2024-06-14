@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Routes, Route, NavLink } from 'react-router-dom';
+import Footer from './Footer';
 
 function Projects() {
 	let [iframeSrc, setIframeSrc] = useState('https://go-bank-seven.vercel.app/')
@@ -54,6 +55,8 @@ function Projects() {
 				</div>
 
 			</div>
+
+			<Footer></Footer>
 		</div>
 	)
 }
