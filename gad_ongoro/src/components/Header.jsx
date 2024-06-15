@@ -22,7 +22,7 @@ function Header() {
 				<div className="nav-div hidden md:block mr-10">
 					<ul className='flex justify-between items-center gap-x-8 lg:gap-x-16'>
 						<li> <NavLink className={'text-lg'} to={"/"} onClick={scrollUp}> Home </NavLink> </li>
-						<li> <a className={'text-lg'} href="/#expertise"> Expertise </a> </li>
+						{/* <li> <NavLink className={'text-lg'} to={'/'} onClick={scrollUp}>Expertise</NavLink> </li> */}
 						<li> <NavLink className={'text-lg'} to={'/projects'} onClick={scrollUp}>Projects</NavLink></li>
 						<li> <NavLink className={'text-lg'} to={'/contact'} onClick={scrollUp}>Contact</NavLink> </li>
 						<li> 

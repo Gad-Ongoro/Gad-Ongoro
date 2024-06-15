@@ -13,6 +13,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
+import AnimatedPage from './AnimatedPage';
 import Footer from './Footer';
 
 export default function Contact() {
@@ -35,7 +36,7 @@ export default function Contact() {
 		setLoading(true);
 		console.log(formData);
 		setFormData({});
-		fetch(`${apiUrl}/api/post/contacts/`, {
+		fetch(`${apiUrl}/post/contacts/`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
@@ -72,6 +73,7 @@ export default function Contact() {
   };
 
   return (
+		<AnimatedPage>
 		<div className='h-screen grid items-center'>
 			<div className='grid justify-center items-center'>
 				<h1 className='pacifico-regular text-violet-900 text-3xl md:text-4xl'>Get in Touch</h1>
@@ -118,35 +120,35 @@ export default function Contact() {
 						<div className=''>
 							<div className='m-2 mt-0'>
 								<h2 className='font-bold'>Email</h2>
-								<p className='m-1'>gadongoro1@gmial.com</p>
+								<p className='m-1 text-gray-500'>gadongoro1@gmail.com</p>
 							</div>
 
 							<div className='m-2 mt-4'>
 								<h2 className='font-bold'>Phone</h2>
-								<p className='m-1'>+254 798 436 255</p>
+								<p className='m-1 text-gray-500'>+254 798 436 255</p>
 							</div>
 
 							<div className="m-2 mt-4">
 								<h2 className='font-bold'>Let's Connect</h2>
 								<div className='flex justify-center items-center gap-x-4'>
-									<a href="mailto:gadongoro1@gmial.com;">
-										<SiGmail size={30} className='transition-all duration-200 hover:text-violet-700 hover:scale-110' />
+									<a href="mailto:gadongoro1@gmail.com;">
+										<SiGmail size={30} className='text-gray-600 transition-all duration-200 hover:text-violet-700 hover:scale-110' />
 									</a>
 
 									<a href="https://wa.me/254798436255" target="_blank" rel="noreferrer">
-										<FaWhatsapp size={30} className='transition-all duration-200 hover:text-violet-700 hover:scale-110' />
+										<FaWhatsapp size={30} className='text-gray-600 transition-all duration-200 hover:text-violet-700 hover:scale-110' />
 									</a>
 
 									<a href="https://www.linkedin.com/in/gad-ongoro-4a31b4215/" target="_blank" rel="noreferrer">
-										<FaLinkedin size={30} className='transition-all duration-200 hover:text-violet-700 hover:scale-110' />
+										<FaLinkedin size={30} className='text-gray-600 transition-all duration-200 hover:text-violet-700 hover:scale-110' />
 									</a>
 									
 									<a href="https://twitter.com/gad_ongoro" target="_blank" rel="noreferrer">
-										<BsTwitterX size={30} className='transition-all duration-200 hover:text-violet-700 hover:scale-110' />
+										<BsTwitterX size={30} className='text-gray-600 transition-all duration-200 hover:text-violet-700 hover:scale-110' />
 									</a>
 									
 									<a href="https://github.com/Gad-Ongoro" target="_blank" rel="noreferrer">
-										<FaGithub size={30} className='transition-all duration-200 hover:text-violet-700 hover:scale-110' />
+										<FaGithub size={30} className='text-gray-600 transition-all duration-200 hover:text-violet-700 hover:scale-110' />
 									</a>
 								</div>
 							</div>
@@ -186,5 +188,6 @@ export default function Contact() {
 
 			<Footer></Footer>
 		</div>
+		</AnimatedPage>
 	);
 }

@@ -5,14 +5,14 @@ function Admin() {
   const [messageList, setMessageList] = useState([]);
 
   useEffect(() => {
-    fetch(`${apiUrl}/api/contacts/`)
+    fetch(`${apiUrl}/contacts/`)
     .then(res => res.json())
     .then(data => setMessageList(data))
 
   }, [])
 
   function handleDelete(id) {
-    fetch(`${apiUrl}/api/contacts/${id}/`, {
+    fetch(`${apiUrl}/contacts/${id}/`, {
       method: 'DELETE',
       headers: {
 				'Content-Type': 'application/json',

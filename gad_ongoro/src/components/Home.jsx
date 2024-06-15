@@ -1,10 +1,11 @@
 import React from 'react';
+import AnimatedPage from './AnimatedPage';
 import Footer from './Footer';
 
 function Home() {
 	const frontEndSkillsList = ['JavaScript', 'React JS', 'Material UI', 'Tailwind CSS', 'Bootstrap V', 'CSS', 'SASS', 'Figma'];
 	const backEndSkillsList = ['Python', 'Django', 'Flask', 'Node JS', 'Express JS', 'MySQL', 'PostgreSQL', 'API Development'];
-	const devOpsList = ['CI/CD', 'Docker', 'AWS', 'Git', 'Linux'];
+	const devOpsList = ['CI/CD', 'Docker', 'AWS', 'Git', 'Linux', 'Render', 'Vercel', 'Netlify'];
 
 	const frontEndSkills = frontEndSkillsList.map((skill) => {
 		return (
@@ -25,6 +26,7 @@ function Home() {
 	})
 
 	return (
+		<AnimatedPage>
 		<div className=''>
 			<div className="">
 				<div className="p-2 grid md:flex justify-between items-center">
@@ -107,6 +109,7 @@ function Home() {
 
 			<Footer></Footer>
 		</div>
+		</AnimatedPage>
 	)
 };
 

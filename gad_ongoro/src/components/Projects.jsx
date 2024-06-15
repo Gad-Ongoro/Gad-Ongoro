@@ -1,44 +1,63 @@
 import { useState } from 'react';
-import { Routes, Route, NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
+import AnimatedPage from './AnimatedPage';
 import Footer from './Footer';
 
 function Projects() {
-	let [iframeSrc, setIframeSrc] = useState('https://go-bank-seven.vercel.app/')
+	let [iframeSrc, setIframeSrc] = useState('https://go-bank-seven.vercel.app/');
+	let location = useLocation();
+	console.log(location.pathname);
+	const projectsNavLinks = [
+		{
+			name: 'Bank Management',
+			link: 'https://go-bank-seven.vercel.app/',
+			to: '/projects/go_bank',
+			className: 'm-2 p-1 text-decoration-none border rounded',
+			onClick: () => {setIframeSrc('https://go-bank-seven.vercel.app/')},
+
+		},
+		{
+			name: 'Tours & Travels',
+			link: 'https://spartans-safaris.vercel.app/accommodations',
+			to: '/projects/safaris',
+			className: 'm-2 p-1 text-decoration-none border rounded',
+			onClick: () => {setIframeSrc('https://spartans-safaris.vercel.app/accommodations')},
+		},
+		{
+			name: 'E-Commerce Store',
+			link: 'https://game-store-seven-xi.vercel.app/',
+			to: '/projects/gamestoreke',
+			className: 'm-2 p-1 text-decoration-none border rounded',
+			onClick: () => {setIframeSrc('https://game-store-seven-xi.vercel.app/')},
+		},
+		{
+			name: 'Event Management',
+			link: 'https://254events.vercel.app/home',
+			to: '/projects/events',
+			className: 'm-2 p-1 text-decoration-none border rounded',
+			onClick: () => {setIframeSrc('https://254events.vercel.app/home')},
+		}
+	]
+
+	const projectsNavs = projectsNavLinks.map((project, index) => {
+		return (
+			<NavLink
+				key={index}
+				to={project.to} exact
+				className={project.className}
+				onClick={project.onClick}
+			>
+				{project.name}
+			</NavLink>
+		)
+	})
+
 	return (
+		<AnimatedPage>
 		<div className='bg-white'>
 			<div className='container-fluid text-center'>
-				{/* <h2> <code>My Projects</code> </h2> */}
 				<div className='project-navlinks d-flex justify-content-center flex-wrap'>
-
-					<NavLink
-					to={'/projects/go_bank'} exact 
-					className={'m-2 p-1 text-decoration-none border rounded'}
-					onClick={() => {setIframeSrc('https://go-bank-seven.vercel.app/')}}
-					>GO Bank</NavLink>
-
-					<NavLink
-					to={'/projects/safaris'} exact 
-					className={'m-2 p-1 text-decoration-none border rounded'}
-					onClick={() => {setIframeSrc('https://spartans-safaris.vercel.app/accommodations')}}
-					>Spartans Safaris</NavLink>
-
-					<NavLink
-					to={'/projects/gamestoreke'} exact 
-					className={'m-2 p-1 text-decoration-none border rounded'}
-					onClick={() => {setIframeSrc('https://game-store-seven-xi.vercel.app/')}}
-					>Game Store</NavLink>
-
-					<NavLink
-					to={'/projects/car_shop_254'} exact 
-					className={'m-2 p-1 text-decoration-none border rounded'}
-					onClick={() => {setIframeSrc('https://gad-ongoro.github.io/Phase-1-Week-4-Independent-Project')}}
-					>Car Shop</NavLink>
-
-					<NavLink
-					to={'/projects/events'} exact 
-					className={'m-2 p-1 text-decoration-none border rounded'}
-					onClick={() => {setIframeSrc('https://254events.vercel.app/home')}}
-					>Events</NavLink>
+					{projectsNavs}
 				</div>
 
 				<div className="projects mt-4" id="projects">
@@ -58,6 +77,7 @@ function Projects() {
 
 			<Footer></Footer>
 		</div>
+		</AnimatedPage>
 	)
 }
 

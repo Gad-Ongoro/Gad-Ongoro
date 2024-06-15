@@ -22,7 +22,6 @@ function Main() {
 						<Route path='/contact' element={<Contact></Contact>}></Route>
 						<Route path='/admin' element={<Admin></Admin>}></Route>
 					</Routes>
-
 					<SlideOver></SlideOver>
 
 					<div className="work" id="work"></div>
