@@ -149,7 +149,7 @@ iframe.my-projects{
 	border-radius: 10px;
 	width: 90%;
 	margin: auto;
-	height: 500px;
+	height: 80vh;
   	background-color: white;
 	border: 5px double rgb(100, 60, 220);
 }

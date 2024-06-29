@@ -15,14 +15,14 @@ function Header() {
 
 				<div>				
 					<div className="">
-						<h2 className='pacifico-regular text-2xl md:text-3xl'> <NavLink to={"/"}> Gad Ongoro </NavLink> </h2>
+						<h2 className='pacifico-regular text-2xl md:text-3xl'> <NavLink to={"/"} onClick={scrollUp}> Gad Ongoro </NavLink> </h2>
 					</div>
 				</div>
 
 				<div className="nav-div hidden md:block mr-10">
 					<ul className='flex justify-between items-center gap-x-8 lg:gap-x-16'>
 						<li> <NavLink className={'text-lg'} to={"/"} onClick={scrollUp}> Home </NavLink> </li>
-						{/* <li> <NavLink className={'text-lg'} to={'/'} onClick={scrollUp}>Expertise</NavLink> </li> */}
+						<li> <NavLink className={'text-lg'} to={'/qualification'} onClick={scrollUp}>Qualification</NavLink> </li>
 						<li> <NavLink className={'text-lg'} to={'/projects'} onClick={scrollUp}>Projects</NavLink></li>
 						<li> <NavLink className={'text-lg'} to={'/contact'} onClick={scrollUp}>Contact</NavLink> </li>
 						<li> 

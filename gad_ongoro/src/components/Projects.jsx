@@ -54,25 +54,26 @@ function Projects() {
 
 	return (
 		<AnimatedPage>
-		<div className='bg-white'>
-			<div className='container-fluid text-center'>
-				<div className='project-navlinks d-flex justify-content-center flex-wrap'>
-					{projectsNavs}
-				</div>
+		<div className='bg-white h-screen'>
+			<div className='h-full'>
+				<div className='container-fluid text-center'>
+					<div className='project-navlinks d-flex justify-content-center flex-wrap'>
+						{projectsNavs}
+					</div>
 
-				<div className="projects mt-4" id="projects">
-					<div className='projects-info_container m-1'>
-						<div className='external_link p-0 rounded-pill d-flex text-align-center justify-content-center'>
-							<h5 className='text-dark'><a className='text-decoration-none' href={iframeSrc} target='_blank' rel='noreferrer'>New tab <img className='d-inline' src="https://cdn-icons-png.flaticon.com/128/12690/12690013.png" alt="NA" width={20} /></a></h5> 
-						</div>
+					<div className="projects mt-4" id="projects">
+						<div className='projects-info_container m-1'>
+							<div className='external_link p-0 rounded-pill d-flex text-align-center justify-content-center'>
+								<h5 className='text-dark'><a className='text-decoration-none' href={iframeSrc} target='_blank' rel='noreferrer'>New tab <img className='d-inline' src="https://cdn-icons-png.flaticon.com/128/12690/12690013.png" alt="NA" width={20} /></a></h5> 
+							</div>
 
-						<div className='iframe_div'>
-							<iframe src={iframeSrc} className="my-projects" title='web-projects' frameborder="0"> CarShop </iframe>
+							<div className='iframe_div'>
+								<iframe src={iframeSrc} className="my-projects" title='web-projects' frameborder="0"> CarShop </iframe>
+							</div>
 						</div>
 					</div>
 
 				</div>
-
 			</div>
 
 			<Footer></Footer>

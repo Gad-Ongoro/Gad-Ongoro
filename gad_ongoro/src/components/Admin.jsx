@@ -19,7 +19,11 @@ function Admin() {
 			}
     })
     .then(res => res.json())
-    .then(data => console.log(data))
+    .then(data => {
+      window.location.reload();
+      console.log(data)
+    }
+    )
   }
 
   const messages = messageList.map(msg => {

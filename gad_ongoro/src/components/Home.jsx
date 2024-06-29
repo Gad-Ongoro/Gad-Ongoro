@@ -38,7 +38,7 @@ function Home() {
 
 					<div className="overview">
 						<div>
-							<code className='m-2 text-gray-950'>👋 I'm Gad, a dedicated full-stack software engineer.
+							<code className='m-2 text-gray-950'>👋 I'm Gad, an ambitious full-stack software developer.
 								Just an <span className='text-primary'><a href='mailto:gadongoro1@gmail.com'>email</a></span> away to save the day,
 								I design, develop, and deploy robust web applications.
 							</code>
@@ -104,9 +104,6 @@ function Home() {
 					</div>
 				</div>
 			</div>
-
-			<div className="work" id="work"></div>
-
 			<Footer></Footer>
 		</div>
 		</AnimatedPage>

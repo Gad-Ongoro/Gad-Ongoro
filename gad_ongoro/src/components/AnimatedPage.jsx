@@ -16,7 +16,7 @@ function AnimatedPage({children}) {
       exit='exit'
       transition={{ duration: 0.5, ease: 'easeInOut' }}
     >
-        {children}
+      {children}
     </motion.div>
   )
 }
