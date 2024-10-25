@@ -164,6 +164,16 @@ iframe.my-projects{
 	transform: translateX(-50%);
 }
 
+.rotate {
+	animation: rotate 5s linear infinite;
+  }
+  
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 /* media queries */
 @media screen and (max-width: 800px){
 	.about{

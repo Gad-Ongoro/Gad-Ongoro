@@ -20,7 +20,7 @@
     "react-multi-carousel": "^2.8.4",
     "react-scripts": "5.0.1",
     "react-svg": "^16.1.33",
-    "vercel": "^34.2.7",
+    "vercel": "^37.1.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

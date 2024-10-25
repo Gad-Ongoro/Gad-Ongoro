@@ -19,7 +19,7 @@ function Main() {
 					<Routes>
 						<Route path='/' element={<Home></Home>}></Route>
 						<Route path='/home' element={<Home></Home>}></Route>
-						<Route path='/qualification' element={<Qualification></Qualification>}></Route>
+						<Route path='/qualification/*' element={<Qualification></Qualification>}></Route>
 						<Route path='/projects/*' element={<Projects></Projects>}></Route>
 						<Route path='/contact' element={<Contact></Contact>}></Route>
 						<Route path='/admin' element={<Admin></Admin>}></Route>

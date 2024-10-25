@@ -65,6 +65,7 @@ export default function SlideOver() {
 											<div className='text-gray-700 text-3xl'>
 												<ul>
 													<li> <NavLink className={'text-lg'} to={"/"} onClick={scrollUp}> Home </NavLink> </li>
+                          <li> <NavLink className={'text-lg'} to={'/qualification/education'} onClick={scrollUp}>Qualification</NavLink> </li>
 													<li> <NavLink className={'text-lg'} to={'/projects'} onClick={scrollUp}>Projects</NavLink></li>
 													<li> <NavLink className={'text-lg'} to={'/contact'} onClick={scrollUp}>Contact</NavLink> </li>
 													<li> 

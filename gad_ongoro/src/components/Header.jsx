@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { RxHamburgerMenu } from "react-icons/rx";
-import { ProfileContext } from '../components/Main';
+import { ProfileContext } from './Main';
 
 function Header() {
 	const {open, setOpen} = useContext(ProfileContext);
@@ -22,8 +22,8 @@ function Header() {
 				<div className="nav-div hidden md:block mr-10">
 					<ul className='flex justify-between items-center gap-x-8 lg:gap-x-16'>
 						<li> <NavLink className={'text-lg'} to={"/"} onClick={scrollUp}> Home </NavLink> </li>
-						<li> <NavLink className={'text-lg'} to={'/qualification'} onClick={scrollUp}>Qualification</NavLink> </li>
-						<li> <NavLink className={'text-lg'} to={'/projects'} onClick={scrollUp}>Projects</NavLink></li>
+						<li> <NavLink className={'text-lg'} to={'/qualification/education'} onClick={scrollUp}>Qualification</NavLink> </li>
+						<li> <NavLink className={'text-lg'} to={'/projects/gofoods'} onClick={scrollUp}>Projects</NavLink></li>
 						<li> <NavLink className={'text-lg'} to={'/contact'} onClick={scrollUp}>Contact</NavLink> </li>
 						<li> 
 							{/* <a className={'text-lg'} href="Gad_Ongoro_Resume.pdf" download={'Gad_Ongoro_Resume.pdf'}>Resume</a> */}
