@@ -15,6 +15,7 @@ import { SiDjango } from "react-icons/si";
 import { SiFlask } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { DiRedis } from "react-icons/di";
 import { GiServerRack } from "react-icons/gi";
 import { SiGithubactions } from "react-icons/si";
 import { IoLogoDocker } from "react-icons/io5";
@@ -26,6 +27,10 @@ import { SiRender } from "react-icons/si";
 import { GrHeroku } from "react-icons/gr";
 import { SiVercel } from "react-icons/si";
 import { SiNetlify } from "react-icons/si";
+import { SiKalilinux } from "react-icons/si";
+import { SiBurpsuite } from "react-icons/si";
+import { SiSnyk } from "react-icons/si";
+import { SiSonarqube } from "react-icons/si";
 import Footer from './Footer';
 
 function Home() {
@@ -38,9 +43,9 @@ function Home() {
 		{ name: 'Flutter', icon: SiFlutter },
 		{ name: 'Tailwind CSS', icon: RiTailwindCssFill },
 		{ name: 'Bootstrap V', icon: FaBootstrap },
-		{ name: 'CSS', icon: IoLogoCss3 },
+		// { name: 'CSS', icon: IoLogoCss3 },
 		// { name: 'SASS', icon: 'SassIcon' },
-		{ name: 'Figma', icon: IoLogoFigma }
+		// { name: 'Figma', icon: IoLogoFigma }
 	];
 
 	const backEndSkillsList = [
@@ -50,6 +55,7 @@ function Home() {
 		{ name: 'Flask', icon: SiFlask },
 		{ name: 'MySQL', icon: SiMysql },
 		{ name: 'PostgreSQL', icon: BiLogoPostgresql },
+		{ name: 'Redis', icon: DiRedis },
 		{ name: 'API Development', icon: GiServerRack }
 	];
 	
@@ -65,12 +71,28 @@ function Home() {
 		{ name: 'Vercel', icon: SiVercel },
 		{ name: 'Netlify', icon: SiNetlify }
 	];
+
+	const securityList = [
+		{ name: 'Kali Linux', icon: SiKalilinux },
+		{ name: 'Burp Suite', icon: SiBurpsuite },
+		{ name: 'Snyk', icon: SiSnyk },
+		{ name: 'SonarQube', icon: SiSonarqube }
+	];
 	
 	const renderSkills = (skillsList) => {
 		return skillsList.map((skill, index) => (
 			<button key={index} className='bg-violet-500 text-white border rounded m-2 p-2 hover:cursor-pointer flex items-center'>
 				{skill.icon && (
-					<skill.icon className={`mr-2 ${skill.rotate ? 'rotate' : ''}`} />
+					<skill.icon
+						className={
+							`
+								mr-2 
+								${skill.rotate ? 'rotate' : ''} 
+								${skill.name === 'Kali Linux' ? 'text-black text-4xl' : ''}
+								${skill.name === 'Redis' ? 'text-4xl' : ''}
+							`
+						} 
+					/>
 				)}
 				<span>{skill.name}</span>
 			</button>
@@ -131,6 +153,18 @@ function Home() {
 								</div>
 							</div>
 						</div>
+
+						<div className="security m-3">
+							<h3>
+								<code className=''>Security</code>
+							</h3>
+							<div>
+								<div className='container d-flex flex-wrap'>
+									{renderSkills(securityList)}
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
