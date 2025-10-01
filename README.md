@@ -138,6 +138,13 @@
     alt="typescript logo"  
   />
   <img width="12" />
+<!-- alpine.js -->
+  <img 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/alpinejs/alpinejs-original.svg"
+    height="40" 
+    alt="Alpine.js logo" 
+  />
+  <img width="12" />
 <!-- Node -->
   <img 
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" 
@@ -163,14 +170,14 @@
   <img 
     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" 
     height="40" 
-    alt="react logo"  
+    alt="react logo" 
   />
   <img width="12" />
-<!-- html5 -->
+<!-- Expo -->
   <img 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" 
-    height="40" 
-    alt="html5 logo"  
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-line-wordmark.svg" 
+    height="60" 
+    alt="expo logo" 
   />
   <img width="12" />
 <!-- tailwindcss -->
@@ -178,13 +185,6 @@
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
     height="40" 
     alt="tailwindcss logo"  
-  />
-  <img width="12" />
-<!-- bootstrap -->
-  <img 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" 
-    height="40" 
-    alt="bootstrap logo"  
   />
   <img width="12" />
 <!-- materialui -->
@@ -199,20 +199,6 @@
     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" 
     height="40" 
     alt="figma logo"  
-  />
-  <img width="12" />
-<!-- dart -->
-  <img 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" 
-    height="40" 
-    alt="dart logo"  
-  />
-  <img width="12" />
-<!-- flutter -->
-  <img 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" 
-    height="40" 
-    alt="flutter logo"  
   />
   <img width="12" />
 <!-- aws -->
