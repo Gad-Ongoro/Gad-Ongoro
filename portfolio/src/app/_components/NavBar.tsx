@@ -4,12 +4,11 @@ import type * as React from "react"
 import { Pacifico } from "next/font/google"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { Home } from "lucide-react"
 import { MdWorkspacePremium } from "react-icons/md"
 import { BsFillBriefcaseFill } from "react-icons/bs";
 import { MdContactPhone } from "react-icons/md"
 import { FaFolderOpen } from "react-icons/fa6"
-import { FaFilePdf } from "react-icons/fa"
+import { FaFilePdf, FaUserTie } from "react-icons/fa"
 import { usePathname } from "next/navigation"
 
 const pacifico = Pacifico({
@@ -27,8 +26,8 @@ interface MenuItem {
 
 const menuItems: MenuItem[] = [
   {
-    icon: <Home className="h-5 w-5" />,
-    label: "Home",
+    icon: <FaUserTie className="h-5 w-5" />,
+    label: "Me",
     href: "/",
     gradient: "radial-gradient(circle, rgba(59,130,246,0.15) 0%, rgba(37,99,235,0.06) 50%, rgba(29,78,216,0) 100%)",
     iconColor: "text-blue-500",

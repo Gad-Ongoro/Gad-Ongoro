@@ -7,13 +7,6 @@ import { useMobile } from '@/hooks/use-mobile';
 
 const educationData = [
 	{
-		school: 'United States International University (USIU)',
-		degree: 'Ethical Hacker Certification',
-		year: '2024-2025',
-		description: 'Gained hands-on experience in cybersecurity principles, ethical hacking methodologies, penetration testing, vulnerability assessment, and network security.',
-		image: '/CEH.png',
-	},
-	{
 		school: 'Moringa School',
 		degree: 'Software Engineering Certification',
 		year: '2024',
@@ -26,7 +19,14 @@ const educationData = [
 		year: '2024',
 		description: 'Focused on rapid learning of emerging tech trends and skill acquisition.',
 		image: '/tum.png',
-	}
+	},
+	{
+		school: 'United States International University (USIU)',
+		degree: 'Ethical Hacker Certification',
+		year: '2024-2025',
+		description: 'Gained hands-on experience in cybersecurity principles, ethical hacking methodologies, penetration testing, vulnerability assessment, and network security.',
+		image: '/CEH.png',
+	},
 ];
 
 function Education() {

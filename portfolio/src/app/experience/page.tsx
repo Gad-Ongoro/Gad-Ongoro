@@ -5,23 +5,15 @@ import { useMobile } from "@/hooks/use-mobile"
 
 const experiences = [
   {
-    title: "Senior Backend Developer",
+    title: "Backend Developer",
     company: "Evenness Rocks",
-    period: "2025 (June) - Present",
+    period: "2025 (February) - 2025 (July)",
     description:
-      `Developing and leading the Backend Taskforce at Evenness, driving API development and integration while coordinating cross-functional teams, mentoring peers, and ensuring timely delivery through strong communication, problem-solving, and leadership skills`,
-  },
-  {
-    title: "Bckend Developer Intern",
-    company: "Evenness Rocks",
-    period: "2025 (February) - 2025 (May)",
-    description:
-      `
-      Developing and optimizing APIs for a11yForge, an AI-driven web accessibility compliance tool. 
-      Designing scalable SQL databases, integrating AI for real-time WCAG analysis, and enabling seamless platform integration to enhance digital accessibility. 
-      Implementing advanced AI features using FastAPI including Optical Character Recognition (OCR) for image-based text extraction, 
-      automatic Alt Text Generation for improved media accessibility, an intelligent Chatbot for user assistance, Text-to-Speech (TTS) for auditory content delivery, and Speech-to-Text (STT) for voice command and transcription capabilities
-      `,
+      `Designed, developed, and optimized APIs and SQL Databases for a11yForge, an accessibility
+      compliance web browser extension, using Express.js and FastAPI with MySQL and PostgreSQL.
+      Reduced deployment time by almost 50% by adopting GitOps workflows.
+      Worked in a cross-functional team using Agile methodologies
+      and Git-based version control for rapid iteration and delivery.`,
   },
   {
     title: "Freelance Software Developer",
