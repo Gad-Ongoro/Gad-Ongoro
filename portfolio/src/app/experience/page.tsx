@@ -5,17 +5,6 @@ import { useMobile } from "@/hooks/use-mobile"
 
 const experiences = [
   {
-    title: "Backend Developer",
-    company: "Evenness Rocks",
-    period: "2025 (February) - 2025 (July)",
-    description:
-      `Designed, developed, and optimized APIs and SQL Databases for a11yForge, an accessibility
-      compliance web browser extension, using Express.js and FastAPI with MySQL and PostgreSQL.
-      Reduced deployment time by almost 50% by adopting GitOps workflows.
-      Worked in a cross-functional team using Agile methodologies
-      and Git-based version control for rapid iteration and delivery.`,
-  },
-  {
     title: "Freelance Software Developer",
     company: "Fiverr",
     period: "2024 (April) - Present",
@@ -25,6 +14,17 @@ const experiences = [
       management, and project management skills to meet varied requirements and 
       expectations
       `,
+  },
+  {
+    title: "Backend Developer",
+    company: "Evenness Rocks",
+    period: "2025 (February) - 2025 (July)",
+    description:
+      `Designed, developed, and optimized APIs and SQL Databases for a11yForge, an accessibility
+      compliance web browser extension, using Express.js and FastAPI with MySQL and PostgreSQL.
+      Reduced deployment time by almost 50% by adopting GitOps workflows.
+      Worked in a cross-functional team using Agile methodologies
+      and Git-based version control for rapid iteration and delivery.`,
   },
 ]
 

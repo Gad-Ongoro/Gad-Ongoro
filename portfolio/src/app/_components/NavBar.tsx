@@ -36,8 +36,8 @@ const menuItems: MenuItem[] = [
     icon: <MdWorkspacePremium className="h-5 w-5" />,
     label: "Qualifications",
     href: "/qualification",
-    gradient: "radial-gradient(circle, rgba(249,115,22,0.15) 0%, rgba(234,88,12,0.06) 50%, rgba(194,65,12,0) 100%)",
-    iconColor: "text-orange-500",
+    gradient: "radial-gradient(circle, rgba(100,40,200,0.15) 0%, rgba(100,40,200,0.06) 50%, rgba(100,40,200,0) 100%)",
+    iconColor: "text-purple-700",
   },
   {
     icon: <BsFillBriefcaseFill className="h-5 w-5" />,
@@ -63,7 +63,7 @@ const menuItems: MenuItem[] = [
   {
     icon: <FaFilePdf className="h-5 w-5" />,
     label: "Resume",
-    href: "/GadOngoro_Resume.pdf",
+    href: "/Gad_Ongoro_Resume_FS.pdf",
     gradient: "radial-gradient(circle, rgba(239,68,68,0.15) 0%, rgba(220,38,38,0.06) 50%, rgba(185,28,28,0) 100%)",
     iconColor: "text-red-500",
   },

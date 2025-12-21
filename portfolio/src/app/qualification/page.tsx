@@ -7,6 +7,13 @@ import { useMobile } from '@/hooks/use-mobile';
 
 const educationData = [
 	{
+		school: 'Power Learn Project',
+		degree: 'Software Development Certification',
+		year: '2025',
+		description: 'I am a PLP Academy Certified Developer (Sponsored by Safaricom Hook) with a passion for building seamless digital experiences. Over a dedicated 16-week curriculum, I enhanced my skills across both web solutions and mobile application development. Whether architecting databases or crafting responsive UI, I bring a holistic, full-stack perspective to software engineering.',
+		image: '/plp_cert.png',
+	},
+	{
 		school: 'Moringa School',
 		degree: 'Software Engineering Certification',
 		year: '2024',
@@ -63,7 +70,9 @@ function Education() {
 						transition={{ duration: 0.5 }}
 						viewport={{ once: false, amount: 0.25 }}
 					>
-						<div className="relative overflow-hidden rounded-xl bg-white dark:bg-zinc-800 backdrop-blur-sm border border-zinc-300 dark:border-zinc-700/50 p-6 transition-all duration-300 hover:border-violet-500/50">
+						<div 
+							className="relative overflow-hidden rounded-xl bg-white dark:bg-zinc-800 backdrop-blur-sm border border-zinc-300 dark:border-zinc-700/50 p-6 transition-all duration-300 hover:border-violet-500/50 shadow-xl shadow-violet-500/10"
+						>
 							<div className="absolute -inset-1 bg-gradient-to-r from-violet-500/10 to-pink-500/10 rounded-xl blur opacity-25 hover:opacity-100 transition duration-1000 hover:duration-200"></div>
 
 							<div className="relative">
@@ -89,7 +98,7 @@ function Education() {
 							height={600} 
 							src={education.image} 
 							alt={education.degree} 
-							className="w-full rounded-xl border border-zinc-300 dark:border-zinc-700 transition duration-500 ease-in-out hover:scale-105 cursor-pointer" 
+							className="w-full rounded-xl border border-zinc-300 dark:border-zinc-700 transition duration-500 ease-in-out hover:scale-105 cursor-pointer shadow-xl" 
 							onClick={() => openModal(education.image)}
 						/>
 					</motion.div>
@@ -116,11 +125,11 @@ function Education() {
 				<div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50" onClick={closeModal}>
 					<div className="bg-white p-4 rounded-lg max-w-3xl max-h-full overflow-auto">
 						<Image 
-							width={800} 
-							height={800} 
+							width={1000} 
+							height={1000} 
 							src={selectedImage} 
 							alt="Certificate" 
-							className="w-full h-auto" 
+							// className="w-full h-auto" 
 						/>
 					</div>
 				</div>
