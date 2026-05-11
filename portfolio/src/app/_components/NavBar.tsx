@@ -33,11 +33,11 @@ const menuItems: MenuItem[] = [
     iconColor: "text-blue-500",
   },
   {
-    icon: <MdWorkspacePremium className="h-5 w-5" />,
-    label: "Qualifications",
-    href: "/qualification",
-    gradient: "radial-gradient(circle, rgba(100,40,200,0.15) 0%, rgba(100,40,200,0.06) 50%, rgba(100,40,200,0) 100%)",
-    iconColor: "text-purple-700",
+    icon: <FaFolderOpen className="h-5 w-5" />,
+    label: "Projects",
+    href: "/projects",
+    gradient: "radial-gradient(circle, rgba(34,197,94,0.15) 0%, rgba(22,163,74,0.06) 50%, rgba(21,128,61,0) 100%)",
+    iconColor: "text-green-500",
   },
   {
     icon: <BsFillBriefcaseFill className="h-5 w-5" />,
@@ -47,11 +47,11 @@ const menuItems: MenuItem[] = [
     iconColor: "text-white-500",
   },
   {
-    icon: <FaFolderOpen className="h-5 w-5" />,
-    label: "Projects",
-    href: "/projects",
-    gradient: "radial-gradient(circle, rgba(34,197,94,0.15) 0%, rgba(22,163,74,0.06) 50%, rgba(21,128,61,0) 100%)",
-    iconColor: "text-green-500",
+    icon: <MdWorkspacePremium className="h-5 w-5" />,
+    label: "Qualifications",
+    href: "/qualification",
+    gradient: "radial-gradient(circle, rgba(100,40,200,0.15) 0%, rgba(100,40,200,0.06) 50%, rgba(100,40,200,0) 100%)",
+    iconColor: "text-purple-700",
   },
   {
     icon: <MdContactPhone className="h-5 w-5" />,
