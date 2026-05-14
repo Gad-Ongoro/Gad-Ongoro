@@ -191,10 +191,10 @@ div.cursor2{
 	overflow: hidden;
 }
 
+/* style: remove color styling from .expertise h3 code */
 .expertise h3 code{
 	font-weight: 900;
 	font-size: 25px;
-  	color: rgb(100, 60, 220);
 }
 
 /* projects */
