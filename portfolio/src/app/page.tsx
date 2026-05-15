@@ -90,7 +90,7 @@ function Home() {
 	
 	const renderSkills = (skillsList: { name: string; icon: IconType; rotate?: boolean }[]) => {
 		return skillsList.map((skill, index) => (
-			<button key={index} className='bg-violet-500 text-white border rounded m-2 p-2 hover:cursor-pointer flex items-center'>
+			<button key={index} className='bg-[#0F172ADD] text-white border rounded m-2 p-2 hover:cursor-pointer flex items-center'>
 				{skill.icon && (
 					<skill.icon
 						className={
@@ -177,7 +177,7 @@ function Home() {
           <div className="expertise" id="expertise">
             <div className="m-3">
               <h3>
-                <code>Back-End Development</code>
+                <code className='text-[#0F172A]'>Back-End Development</code>
               </h3>
               <div>
                 <div className='flex flex-wrap'>
@@ -188,7 +188,7 @@ function Home() {
 
             <div className="m-3">
               <h3>
-                <code>Front-End Development</code>
+                <code className='text-[#0F172A]'>Front-End Development</code>
               </h3>
               <div>
                 <div className='flex flex-wrap'>
@@ -199,7 +199,7 @@ function Home() {
 
             <div className="m-3">
               <h3>
-                <code className=''>Dev-Ops</code>
+                <code className='text-[#0F172A]'>Dev-Ops</code>
               </h3>
               <div>
                 <div className='flex flex-wrap'>
