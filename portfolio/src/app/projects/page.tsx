@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { motion, AnimatePresence } from "framer-motion";
 
+import MobileCarousel from "@/components/carousel/MobileCarousel";
+
 const webProjects = [
   {
     name: "AgriTech E-Commerce",
@@ -48,54 +50,19 @@ const mobileProjects = [
       "A cross-platform mobile app for property discovery, listings management, and tenant-landlord communication. Built with React Native and Expo, OG Estates brings a seamless real estate experience to iOS and Android.",
     tech: ["React Native", "Expo", "TypeScript"],
     githubLink: "https://github.com/Gad-Ongoro",
+    webLink: "https://ogestates.vercel.app/",
     status: "In Development",
-    screenshots: ['/msgs_screen.png', '/OGEstates_iOS.jpeg', '/gobot.png'],
+    screenshots: [
+      { src: "/ogestates/OGEstates_iOS.jpeg", alt: "Home screen", caption: "Home screen" },
+      { src: "/ogestates/og_shorts.jpeg", alt: "Shorts screen", caption: "Shorts screen" },
+      { src: "/ogestates/go_chats_dark.png", alt: "Messages screen", caption: "In-app messaging - Dark mode" },
+      { src: "/ogestates/go_chats_light.jpeg", alt: "Profile screen", caption: "In-app messaging - Light mode" },
+      { src: "/ogestates/gobot_dark.png", alt: "GoBot screen", caption: "AI assistant - Dark mode" },
+      { src: "/ogestates/gobot_light.jpeg", alt: "Home screen", caption: "AI assistant - Light mode" },
+    ],
   },
 ];
 
-// Placeholder phone screenshot
-function PhonePlaceholder({ index }: { index: number }) {
-  const labels = ["Home", "Listings", "Details"];
-  const icons = ["", "", ""];
-  return (
-    <div className="w-full h-full flex flex-col items-center justify-center gap-3 bg-gradient-to-br from-violet-950 to-slate-900">
-      <span className="text-4xl">{icons[index] ?? ""}</span>
-      <span className="text-violet-300 text-xs font-mono tracking-widest uppercase">{labels[index] ?? "Screen"}</span>
-      <div className="w-10 h-0.5 bg-violet-500/40 rounded-full" />
-      <span className="text-slate-500 text-xs">Coming soon</span>
-    </div>
-  );
-}
-
-// Phone frame component
-function PhoneFrame({ children, index }: { children: React.ReactNode; index: number }) {
-  return (
-    <motion.div
-      className="relative flex-shrink-0"
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-    >
-      {/* Phone outer shell */}
-      <div className="relative w-[180px] h-[410px] rounded-[2rem] bg-gradient-to-b from-slate-700 to-slate-800 p-[3px] shadow-2xl shadow-violet-900/40">
-        {/* Inner bezel */}
-        <div className="w-full h-full rounded-[2rem] bg-slate-900 overflow-hidden relative">
-          {/* Notch */}
-          {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-4 bg-slate-800 rounded-b-xl z-10 flex items-center justify-center">
-            <div className="w-2 h-2 rounded-full bg-slate-600" />
-          </div> */}
-          {/* Screen content */}
-          <div className="w-full h-full">{children}</div>
-        </div>
-        {/* Side button */}
-        <div className="absolute right-[-4px] top-20 w-1 h-10 bg-slate-600 rounded-r-md" />
-        {/* Volume buttons */}
-        <div className="absolute left-[-4px] top-16 w-1 h-7 bg-slate-600 rounded-l-md" />
-        {/* <div className="absolute left-[-4px] top-26 w-1 h-7 bg-slate-600 rounded-l-md mt-10" /> */}
-      </div>
-    </motion.div>
-  );
-}
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = React.useState<"web" | "mobile">("mobile");
@@ -124,9 +91,8 @@ export default function Projects() {
           />
           <button
             onClick={() => setActiveCategory("mobile")}
-            className={`relative z-10 flex items-center gap-2 px-5 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
-              activeCategory === "mobile" ? "text-white" : "text-slate-500 hover:text-violet-700"
-            }`}
+            className={`relative z-10 flex items-center gap-2 px-5 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${activeCategory === "mobile" ? "text-white" : "text-slate-500 hover:text-violet-700"
+              }`}
           >
             <Smartphone className="w-4 h-4" />
             Mobile Projects
@@ -134,9 +100,8 @@ export default function Projects() {
 
           <button
             onClick={() => setActiveCategory("web")}
-            className={`relative z-10 flex items-center gap-2 px-5 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
-              activeCategory === "web" ? "text-white" : "text-slate-500 hover:text-violet-700"
-            }`}
+            className={`relative z-10 flex items-center gap-2 px-5 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${activeCategory === "web" ? "text-white" : "text-slate-500 hover:text-violet-700"
+              }`}
           >
             <Globe className="w-4 h-4" />
             Web Projects
@@ -167,23 +132,10 @@ export default function Projects() {
                   <p className="text-violet-600 font-medium mt-1">{app.tagline}</p>
                 </div>
 
-                {/* Phone mockups */}
-                <div className="flex justify-center items-end gap-6 md:gap-10 py-4">
-                  {app.screenshots.map((src, i) => (
-                    <div
-                      key={i}
-                      className={`transition-transform duration-300 ${i === 1 ? "scale-110 z-10" : "scale-95 opacity-80"}`}
-                    >
-                      <PhoneFrame index={i}>
-                        {src ? (
-                          <img src={src} alt={`${app.name} screen ${i + 1}`} className="w-full h-full object-cover" />
-                        ) : (
-                          <PhonePlaceholder index={i} />
-                        )}
-                      </PhoneFrame>
-                    </div>
-                  ))}
-                </div>
+                <MobileCarousel
+                  screenshots={app.screenshots}
+                  projectName={app.name}
+                />
 
                 {/* Description & tech */}
                 <div className="bg-white dark:bg-slate-800/50 border border-violet-200 dark:border-violet-800/40 rounded-2xl p-6 text-center shadow-sm">
@@ -198,15 +150,26 @@ export default function Projects() {
                       </span>
                     ))}
                   </div>
-                  <a
-                    href={app.githubLink}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-700 text-white rounded-full px-5 py-2.5 text-sm font-medium transition-colors"
-                  >
-                    <Github className="w-4 h-4" />
-                    View on GitHub
-                  </a>
+                  <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                    <a
+                      href={app.githubLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-700 text-white rounded-full px-5 py-2.5 text-sm font-medium transition-colors"
+                    >
+                      <Github className="w-4 h-4" />
+                      View on GitHub
+                    </a>
+                    <a
+                      href={app.webLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 bg-violet-600 hover:bg-violet-700 text-white rounded-full px-5 py-2.5 text-sm font-medium transition-colors"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      View Web App
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
@@ -227,9 +190,8 @@ export default function Projects() {
               {webProjects.map((project, index) => (
                 <button
                   key={index}
-                  className={`m-2 p-1 border rounded text-gray-950 text-xl bg-violet-200 hover:bg-violet-300 transition-all duration-100 ease-in-out ${
-                    activeTab === index ? "bg-violet-300" : ""
-                  }`}
+                  className={`m-2 p-1 border rounded text-gray-950 text-xl bg-violet-200 hover:bg-violet-300 transition-all duration-100 ease-in-out ${activeTab === index ? "bg-violet-300" : ""
+                    }`}
                   onClick={() => selectProject(index)}
                 >
                   {project.name}
@@ -275,9 +237,8 @@ export default function Projects() {
                   {webProjects.map((project, index) => (
                     <div
                       key={index}
-                      className={`flex items-center min-w-[140px] max-w-[200px] h-8 px-3 py-1 mr-1 rounded-t-lg cursor-pointer ${
-                        activeTab === index ? "bg-gray-300" : "bg-muted hover:bg-gray-200"
-                      }`}
+                      className={`flex items-center min-w-[140px] max-w-[200px] h-8 px-3 py-1 mr-1 rounded-t-lg cursor-pointer ${activeTab === index ? "bg-gray-300" : "bg-muted hover:bg-gray-200"
+                        }`}
                       onClick={() => selectProject(index)}
                     >
                       <span className="truncate text-sm">{project.name}</span>
