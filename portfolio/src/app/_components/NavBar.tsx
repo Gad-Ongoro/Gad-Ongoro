@@ -7,6 +7,7 @@ import { motion } from "framer-motion"
 import { MdWorkspacePremium } from "react-icons/md"
 import { BsFillBriefcaseFill } from "react-icons/bs";
 import { MdContactPhone } from "react-icons/md"
+import { RiServiceFill } from "react-icons/ri"
 import { FaFolderOpen } from "react-icons/fa6"
 import { FaFilePdf, FaUserTie } from "react-icons/fa"
 import { usePathname } from "next/navigation"
@@ -31,6 +32,13 @@ const menuItems: MenuItem[] = [
     href: "/",
     gradient: "radial-gradient(circle, rgba(59,130,246,0.15) 0%, rgba(37,99,235,0.06) 50%, rgba(29,78,216,0) 100%)",
     iconColor: "text-blue-500",
+  },
+  {
+    icon: <RiServiceFill className="h-5 w-5" />,
+    label: "Services",
+    href: "/services",
+    gradient: "radial-gradient(circle, rgba(139,92,246,0.15) 0%, rgba(124,58,237,0.06) 50%, rgba(109,40,217,0) 100%)",
+    iconColor: "text-violet-500",
   },
   {
     icon: <FaFolderOpen className="h-5 w-5" />,
