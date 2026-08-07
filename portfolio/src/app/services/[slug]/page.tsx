@@ -16,8 +16,14 @@ import {
   CheckCircle2,
   Clock,
   ArrowRight,
+  Workflow,
+  FileInput,
+  Sparkles,
+  Users, MessageSquare, Mail
 } from "lucide-react";
-import AnimatedPage from "../../../components/animations/AnimatedPage";
+
+import AnimatedPage from "@/components/animations/AnimatedPage";
+import AutomationFlow, { type AutomationStep } from "@/components/automation/AutomationFlow";
 
 const services: Record<string, ServiceDetail> = {
   "frontend-development": {
@@ -188,6 +194,41 @@ const services: Record<string, ServiceDetail> = {
     techStack: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript", "Vercel"],
     startingFrom: 150,
   },
+  "workflow-automation": {
+    icon: Workflow,
+    title: "Workflow Automation (Make.com)",
+    tagline: "Your busywork, on autopilot.",
+    accent: "from-indigo-500 to-blue-400",
+    iconBg: "bg-indigo-500/10 text-indigo-400",
+    overview:
+      "I design and build Make.com scenarios that connect the tools you already use, forms, CRMs, spreadsheets, Slack, email, so information moves between them without anyone copying and pasting. No backend to maintain, just automations that quietly do the repetitive work.",
+    whatYouGet: [
+      "Scenario mapped to your exact workflow",
+      "Webhook and trigger setup (forms, schedules, app events)",
+      "Connections between your existing apps and CRM",
+      "Error handling and retry logic so nothing silently fails",
+      "Monitoring so you know if a run breaks",
+      "Written documentation of what the automation does",
+      "One round of adjustments after you test it live",
+    ],
+    process: [
+      { step: "Map the workflow", detail: "Walk through the manual process step by step and find what can be automated." },
+      { step: "Build in Make.com", detail: "Set up the scenario, modules, and logic." },
+      { step: "Connect & test", detail: "Wire up your real apps and run test data through it." },
+      { step: "Add error handling", detail: "Make sure failures notify you instead of disappearing." },
+      { step: "Handoff", detail: "Document the scenario and hand over access or ongoing monitoring." },
+    ],
+    timeline: "3 - 7 days depending on complexity",
+    techStack: ["Make.com", "n8n", "Zapier", "Webhooks", "REST APIs", "Google Sheets", "Slack", "Email", "Zoho CRM", "Airtable"],
+    startingFrom: 120,
+    sampleFlow: [
+      { icon: FileInput, label: "Form Submitted", description: "A lead or request comes in" },
+      { icon: Sparkles, label: "Validate & Enrich", description: "Data is checked and filled in" },
+      { icon: Users, label: "Create CRM Contact", description: "Synced to your CRM automatically" },
+      { icon: MessageSquare, label: "Slack Alert", description: "Your team is notified instantly" },
+      { icon: Mail, label: "Confirmation Email", description: "The lead gets an instant reply" },
+    ],
+  },
   "virtual-assistance": {
     icon: HeadphonesIcon,
     title: "Virtual Assistance",
@@ -230,6 +271,7 @@ interface ServiceDetail {
   timeline: string;
   techStack: string[];
   startingFrom: number;
+  sampleFlow?: AutomationStep[];
 }
 
 export default async function ServiceDetailPage({
@@ -282,6 +324,22 @@ export default async function ServiceDetailPage({
             {service.overview}
           </p>
         </motion.div>
+
+        {service.sampleFlow && (
+          <motion.div
+            className="mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+          >
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-5">
+              A sample automation
+            </h2>
+            <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 p-6 overflow-x-auto">
+              <AutomationFlow steps={service.sampleFlow} />
+            </div>
+          </motion.div>
+        )}
 
         {/* Pricing + Timeline banner */}
         <motion.div

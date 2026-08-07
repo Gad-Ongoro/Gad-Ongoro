@@ -9,6 +9,7 @@ import {
   Smartphone,
   Cloud,
   PenTool,
+  Workflow,
   HeadphonesIcon,
   ArrowRight,
 } from "lucide-react";
@@ -80,6 +81,17 @@ const services = [
     tags: ["Figma", "Next.js", "Tailwind CSS", "Responsive", "Animations"],
     accent: "from-fuchsia-500 to-pink-400",
     iconBg: "bg-fuchsia-500/10 text-fuchsia-400",
+  },
+  {
+    slug: "workflow-automation",
+    icon: Workflow,
+    title: "Workflow Automation (Make.com)",
+    tagline: "Your busywork, on autopilot.",
+    description:
+      "Make.com scenarios that connect your apps, no full backend needed. I automate lead capture, notifications, data sync, and repetitive ops tasks so nothing falls through the cracks.",
+    tags: ["Make.com", "n8n", "Zapier", "Webhooks", "CRM Sync", "Low/No-Code", "API Automation"],
+    accent: "from-indigo-500 to-blue-400",
+    iconBg: "bg-indigo-500/10 text-indigo-400",
   },
   {
     slug: "virtual-assistance",
